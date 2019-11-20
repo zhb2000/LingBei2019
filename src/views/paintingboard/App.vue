@@ -2,6 +2,7 @@
   <div id="app">
     <div class="navbar_area">
       <my-navbar :selected="4" />
+      <painting-navbar title="无标题-我的作品"/>
     </div>
 
     <my-grid>
@@ -12,7 +13,7 @@
         <draw-board />
       </template>
       <template v-slot:toolbar>
-        <painting-toolbar :selectedPen="0" :selectedColor="0"/>
+        <painting-toolbar :selectedPen="3" :selectedColor="0"/>
       </template>
     </my-grid>
   </div>
@@ -23,7 +24,8 @@ import MyNavbar from "@/components/MyNavbar.vue";
 import PaintingBoardGrid from "@/components/PaintingBoardGrid.vue";
 import PaintingBoard from "@/components/PaintingBoard.vue";
 import PaintingPicture from "@/components/PaintingPicture.vue";
-import PaintingToolbar from "@/components/PaintingToolbar.vue"
+import PaintingToolbar from "@/components/PaintingToolbar.vue";
+import PaintingBoardNavbar from "@/components/PaintingBoardNavbar.vue";
 
 export default {
   name: "app",
@@ -37,7 +39,8 @@ export default {
     "my-grid": PaintingBoardGrid,
     "draw-board": PaintingBoard,
     "painting-pic": PaintingPicture,
-    "painting-toolbar": PaintingToolbar
+    "painting-toolbar": PaintingToolbar,
+    "painting-navbar": PaintingBoardNavbar
   }
 };
 </script>

@@ -1,8 +1,8 @@
 <template>
   <div class="bar">
     <div></div>
-    <pen-tools :selected-pen="3" />
-    <color-tools :selected-color="0" />
+    <pen-tools :selected-pen="selectedPen" />
+    <color-tools :selected-color="selectedColor" />
     <div></div>
   </div>
 </template>
