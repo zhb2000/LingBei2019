@@ -12,7 +12,7 @@
         <draw-board />
       </template>
       <template v-slot:toolbar>
-        <painting-toolbar />
+        <painting-toolbar :selectedPen="0" :selectedColor="0"/>
       </template>
     </my-grid>
   </div>
