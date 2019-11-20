@@ -33,8 +33,6 @@ export default {
 /**包括按钮和菜单在内的整个区域 */
 .dropdown {
   display: inline-block;
-  height: 100%;
-  width: 100%;
 }
 
 /**按钮 */

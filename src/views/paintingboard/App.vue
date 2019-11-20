@@ -1,43 +1,43 @@
 <template>
   <div id="app">
     <div class="navbar_area">
-      <my-navbar :selected="1" />
+      <my-navbar :selected="4" />
     </div>
-    <content-area>
-      <my-gird>
-        <ani-card v-for="item in cardItems" :cardItem="item" :key="item.id" />
-      </my-gird>
-    </content-area>
+
+    <my-grid>
+      <template v-slot:picture>
+        <painting-pic :pic-src="picSrc"/>
+      </template>
+      <template v-slot:board>
+        <draw-board />
+      </template>
+      <template v-slot:toolbar>
+        <painting-toolbar />
+      </template>
+    </my-grid>
   </div>
 </template>
 
 <script>
 import MyNavbar from "@/components/MyNavbar.vue";
-import MyContentArea from "@/components/MyContentArea.vue";
-import AnimationCard from "@/components/AnimationCard.vue";
-import MyGrid from "@/components/MyGrid.vue";
+import PaintingBoardGrid from "@/components/PaintingBoardGrid.vue";
+import PaintingBoard from "@/components/PaintingBoard.vue";
+import PaintingPicture from "@/components/PaintingPicture.vue";
+import PaintingToolbar from "@/components/PaintingToolbar.vue"
 
 export default {
   name: "app",
-  components: {
-    "my-navbar": MyNavbar,
-    "content-area": MyContentArea,
-    "ani-card": AnimationCard,
-    "my-gird": MyGrid
-  },
   data: function() {
     return {
-      //对象数组
-      cardItems: [
-        {
-          id: 0,
-          imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          title: "罗小黑战记",
-          date: "2019-1-1",
-          rate: 4.2
-        }
-      ]
+      picSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg")
     };
+  },
+  components: {
+    "my-navbar": MyNavbar,
+    "my-grid": PaintingBoardGrid,
+    "draw-board": PaintingBoard,
+    "painting-pic": PaintingPicture,
+    "painting-toolbar": PaintingToolbar
   }
 };
 </script>
@@ -56,7 +56,6 @@ body {
 }
 
 #app {
-  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -68,5 +67,6 @@ body {
   position: sticky;
   width: 100%;
   top: 0px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 </style>

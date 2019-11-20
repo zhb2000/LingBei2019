@@ -1,7 +1,8 @@
 <template>
   <div class="navbar_outer">
-    <div class="left_dropdown_outer">
+    <div class="dropdown_outer">
       <dropdown-button
+        class="dropdown"
         :itemArray="leftDropdownArray"
         :isRight="false"
         :selected="leftDropdownSelected"
@@ -12,8 +13,9 @@
         <div>{{item.title}}</div>
       </li>
     </ul>
-    <div class="right_dropdown_outer">
+    <div class="dropdown_outer">
       <dropdown-button
+        class="dropdown"
         :itemArray="rightDropdownArray"
         :isRight="false"
         :selected="rightDropdownSelected"
@@ -50,7 +52,7 @@ export default {
       leftDropdownSelected: 0,
 
       //右侧下拉菜单对象数组
-      rightDropdownArray: [{ id: 0, title: "电影" }, { id: 1, title: "漫画" }],
+      rightDropdownArray: [{ id: 0, title: "最热" }, { id: 1, title: "上映时间" }],
       //右侧下拉菜单被选中
       rightDropdownSelected: 1
     };
@@ -67,28 +69,24 @@ export default {
   top: 0px;
   width: 100%;
   height: 50px;
-  box-sizing: border-box;
   background-color: #ffffff;
   overflow: hidden;
-  /* box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2); */
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
 }
 
-.left_dropdown_outer {
-  float: left;
+.dropdown_outer {
+  padding: 10px 0px;
+  text-align: center;/*让按钮水平居中 */
+}
+
+/**块状元素定宽+margin: auto来水平居中 */
+.dropdown {
   height: 100%;
-  width: 200px;
-  padding: 10px 50px;
 }
 
-.right_dropdown_outer {
-  float: right;
-  height: 100%;
-  width: 200px;
-  padding: 10px 50px;
-}
-
+/**必须要margin: auto否则会偏移出去，不知道为什么 */
 .type_list {
-  display: inline-block;
   list-style-type: none;
   margin: auto;
   padding: 0;

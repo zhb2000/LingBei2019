@@ -22,7 +22,7 @@ export default {
         { id: 0, title: "首页", link: "https://www.baidu.com" },
         { id: 1, title: "国漫", link: "https://www.baidu.com" },
         { id: 2, title: "广场", link: "https://www.baidu.com" },
-        { id: 3, title: "咨询", link: "https://www.baidu.com" },
+        { id: 3, title: "资讯", link: "https://www.baidu.com" },
         { id: 4, title: "画板", link: "https://www.baidu.com" }
       ]
     };
