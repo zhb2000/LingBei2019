@@ -34,7 +34,7 @@ export default {
 /**包裹在卡片外面的一层div */
 /**在这里设置margin，否则卡片会挤出去 */
 .outer {
-  margin: 7px;
+  margin: 0px;
 }
 
 /**卡片 */

@@ -22,6 +22,13 @@ module.exports = {
       title: '画板-试一试！',
       chunks: ['chunk-vendors', 'chunk-common', 'paintingboard']
     },
+    square: {
+      entry: 'src/views/square/main.js',
+      template: 'src/views/paintingboard/index.html',
+      filename: 'square.html',
+      title: '广场',
+      chunks: ['chunk-vendors', 'chunk-common', 'square']
+    },
     // 当使用只有入口的字符串格式时，
     // 模板会被推导为 `public/subpage.html`
     // 并且如果找不到的话，就回退到 `public/index.html`。
