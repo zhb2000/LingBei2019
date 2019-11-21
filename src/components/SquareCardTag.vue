@@ -17,8 +17,9 @@ export default {
   left: 10px;
   color: white;
   font-size: 12px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 5px 13px;
   border-radius: 20px;
+  font-weight: bold;
 }
 </style>

@@ -1,20 +1,17 @@
 <template>
   <div class="group_grid">
-    <pic-text-card
-      class="big"
-      :item="{link:'https://www.baidu.com',imgLink:require('@/assets/art_works_list_img/罗小黑战记.jpg'),title:'标题',description:'描述',tag:'幕后'}"
-    />
+    <div class="big_area">
+      <!--大卡片会被放这里-->
+      <slot name="main-card"></slot>
+    </div>
+    <!--其余卡片被放到这里-->
+    <slot></slot>
   </div>
 </template>
 
 <script>
-import PicTextCard from "@/components/PicTextCard.vue";
-
 export default {
-  name: "CardGroupGrid",
-  components: {
-    "pic-text-card": PicTextCard
-  }
+  name: "CardGroupGrid"
 };
 </script>
 
@@ -28,7 +25,7 @@ export default {
     "a a d e";
   grid-gap: 30px;
 }
-.big {
+.big_area {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
 }

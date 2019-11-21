@@ -4,7 +4,15 @@
       <my-navbar :selected="2" />
     </div>
     <content-area style="margin-top:30px">
-      <card-group/>
+      <card-group>
+        <template #main-card>
+          <pic-text-card :item="picTextCards[0]" />
+        </template>
+        <pic-text-card :item="picTextCards[1]" />
+        <pic-text-card :item="picTextCards[1]" />
+        <text-card :item="textCards[0]" />
+        <text-card :item="textCards[0]" />
+      </card-group>
     </content-area>
   </div>
 </template>
@@ -13,13 +21,47 @@
 import MyNavbar from "@/components/MyNavbar.vue";
 import MyContentArea from "@/components/MyContentArea.vue";
 import CardGroupGrid from "@/components/CardGroupGrid.vue";
+import PicTextCard from "@/components/PicTextCard.vue";
+import SquareTextCard from "@/components/SquareTextCard.vue";
 
 export default {
   name: "app",
   components: {
     "my-navbar": MyNavbar,
     "content-area": MyContentArea,
-    "card-group": CardGroupGrid
+    "card-group": CardGroupGrid,
+    "pic-text-card": PicTextCard,
+    "text-card": SquareTextCard
+  },
+  data: function() {
+    return {
+      picTextCards: [
+        {
+          link: "https://www.baidu.com",
+          imgLink: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
+          title: "标题",
+          description: "描述",
+          tag: "幕后"
+        },
+        {
+          link: "https://www.baidu.com",
+          imgLink: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
+          title: "标题",
+          description: "描述",
+          tag: "幕后"
+        }
+      ],
+      textCards: [
+        {
+          link: "https://www.baidu.com",
+          imgLink: require("@/assets/profile_photo/头像-18.jpg"),
+          comment:
+            "lalalalalalalalalalalalalalalalalalalalalalalalalalalalalala",
+          noteName: "西游记之大圣归来",
+          tag: "热评"
+        }
+      ]
+    };
   }
 };
 </script>
