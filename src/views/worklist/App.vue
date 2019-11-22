@@ -4,7 +4,7 @@
       <my-navbar :selected="1" />
       <work-list-navbar :typeSelected="0"/>
     </div>
-    <content-area style="margin-top: 30px">
+    <content-area style="margin-top:30px; margin-bottom:30px">
       <my-gird>
         <ani-card v-for="item in cardItems" :cardItem="item" :key="item.id" />
       </my-gird>

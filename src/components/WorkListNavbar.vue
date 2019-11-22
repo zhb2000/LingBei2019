@@ -4,12 +4,11 @@
       <dropdown-button
         class="dropdown"
         :itemArray="leftDropdownArray"
-        :isRight="false"
         :selected="leftDropdownSelected"
       />
     </div>
     <ul class="type_list">
-      <li v-for="item in typeArray" :key="item.id" :class="{active: item.id==typeSelected}">
+      <li v-for="item in typeArray" :key="item.id" :class="{active: item.id===typeSelected}">
         <div>{{item.title}}</div>
       </li>
     </ul>
@@ -17,7 +16,6 @@
       <dropdown-button
         class="dropdown"
         :itemArray="rightDropdownArray"
-        :isRight="false"
         :selected="rightDropdownSelected"
       />
     </div>
@@ -113,12 +111,19 @@ export default {
 }
 
 .type_list > li.active > div{
-    background-color: pink;
+    background-color: #ff6a6a;
+}
+
+.type_list > li.active > div:hover{
+    font-weight: bold;
 }
 
 /*非当前项目鼠标悬浮*/
 .type_list > li:not(.active) :hover {
-  color: pink;
+  color: #ff6a6a;
+  font-weight: bold;
+  /* color: white;
+  background-color: rgba(0, 0, 0, 0.2); */
 }
 
 /*当前项目*/

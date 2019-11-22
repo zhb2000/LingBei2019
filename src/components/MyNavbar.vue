@@ -22,8 +22,7 @@ export default {
         { id: 0, title: "首页", link: "https://www.baidu.com" },
         { id: 1, title: "国漫", link: "https://www.baidu.com" },
         { id: 2, title: "广场", link: "https://www.baidu.com" },
-        { id: 3, title: "资讯", link: "https://www.baidu.com" },
-        { id: 4, title: "画板", link: "https://www.baidu.com" }
+        { id: 3, title: "画板", link: "https://www.baidu.com" }
       ]
     };
   },
@@ -42,9 +41,8 @@ export default {
   width: 100%;
   height: 50px;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #474747;
   overflow: hidden;
-  /* box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2); */
 }
 
 /**导航栏的logo图片 */
@@ -62,14 +60,16 @@ export default {
 
 /**登录按钮 */
 .navbar_button {
-  background-color: palevioletred;
+  background-color: #fe6868;
   border: 0px;
   color: white;
   height: 100%;
   width: 100px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 0px solid;
   transition: 0.5s;
+  outline: none;
+  cursor: pointer;
 }
 
 /**登录按钮鼠标悬浮 */
@@ -94,24 +94,29 @@ export default {
 
 .navbar > li a {
   display: block;
-  color: black;
+  color: #c3c3c3;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   height: 100%;
+  transition: 0.3s;
 }
 
 /*非当前项目鼠标悬浮*/
 .navbar > li a:hover:not(.active) {
-  /*background-color: #111;*/
-  color: #4caf50;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ff6a6a;
+}
+
+/*当前项目鼠标悬浮*/
+.navbar > li a:hover.active{
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*当前项目*/
 .navbar .active {
-  /*background-color: #4CAF50;*/
-  color: #4caf50;
-  border-bottom: 3px solid #4caf50;
+  color: #ff6a6a;
+  /* border-bottom: 3px solid #ff6a6a; */
   font-weight: bold;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="navbar_area">
-      <my-navbar :selected="4" />
+      <my-navbar :selected="3" />
       <painting-navbar title="无标题-我的作品"/>
     </div>
 

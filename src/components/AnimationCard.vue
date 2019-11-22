@@ -3,15 +3,19 @@
     <div class="card">
       <img class="ani_img" :src="cardItem.imgSrc" />
       <div class="card_content_area">
-        <div class="left_box">
-          <div class="content">
-            <p>{{cardItem.title}}</p>
-            <p>{{cardItem.date}}</p>
+        <div class="left_content">
+          <div>
+            <div class="title_area">
+              <img src="@/assets/icon/movie.svg" class="icon" />
+              <div class="title">{{cardItem.title}}</div>
+            </div>
+            <div class="date">{{cardItem.date}}</div>
           </div>
         </div>
-        <div class="right_box">
-          <div class="content">
-            <p>{{cardItem.rate}}</p>
+        <div class="right_content">
+          <div class="star_area">
+            <img src="@/assets/icon/star_icon/1.svg" class="star_icon">
+          <div class=rate>{{cardItem.rate}}</div>
           </div>
         </div>
       </div>
@@ -63,37 +67,85 @@ export default {
 /**图片下方的内容区域 */
 /**必须设定height为固定值，否则子元素height:100%无法生效 */
 /**必须设定font-size: 0px，否则子元素inline-block会自动换行 */
-.card_content_area {
+/* .card_content_area {
   width: 100%;
-  height: 100px;
+  height: 80px;
   font-size: 0px;
-}
-
+} */
 /**包裹左侧内容的wrapper */
 /**font-size恢复为原来的大小 */
 /**必须设置height: 100%，否则左右盒子无法对齐 */
 /**该wrapper里只能有一个子元素，否则左右盒子无法对齐 */
-.left_box {
+/* .left_box {
   display: inline-block;
   font-size: 16px;
   height: 100%;
   width: 70%;
-  /* background-color: red; */
-}
-
+} */
 /**包裹右侧内容的wrapper */
-.right_box {
+/* .right_box {
   display: inline-block;
   font-size: 16px;
   height: 100%;
   width: 30%;
-  /* background-color: blue; */
+} */
+
+.card_content_area {
+  margin: 2px 5px;
+  /* height: 80px; */
+  display: grid;
+  grid-template-columns: 7fr 3fr;
 }
 
-/**wrapper中唯一的子元素 */
-.content {
+.left_content,
+.right_content {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+.left_content {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+}
+.right_content {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: right;
+  align-items: center;
+}
+.title_area{
+  display: grid;
+  grid-template-columns: 17px auto;
+  align-items: center;
+  column-gap: 5px;
+}
+.icon {
+  display: inline-block;
+  width: 100%;
+}
+.title {
+  display: inline-block;
+  font-size: 16px;
+  overflow: hidden;
+}
+.date {
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+}
+.star_area{
+  display: grid;
+  grid-template-columns: 20px auto;
+  column-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+.star_icon{
+  width: 100%;
+}
+.rate{
+  font-size: 16px;
+  color: #f5a33c;
 }
 </style>
