@@ -1,8 +1,6 @@
 <template>
   <div class="card">
-    <div>
-      <float-tag class="float_tag">剧照</float-tag>
-    </div>
+    <float-tag class="float_tag">剧照</float-tag>
     <div class="image_group">
       <a v-for="item in imgArray" :key="item.id" :href="item.link">
         <img :src="item.imgSrc" class="image" />
@@ -36,7 +34,7 @@ export default {
   padding: 30px 20px 20px 20px;
   position: relative;
 }
-.float_tag{
+.float_tag {
   position: absolute;
   top: -15px;
   left: 20px;

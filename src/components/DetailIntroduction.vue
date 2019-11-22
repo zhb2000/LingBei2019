@@ -13,7 +13,9 @@
         </div>
         <div class="grey_card">
           <div class="text_wrapper">
-            <div class="detail_text">{{item.detail}}</div>
+            <div class="detail_text">
+              {{item.detail}}
+            </div>
           </div>
           <float-tag class="float_tag">简介</float-tag>
         </div>
@@ -81,7 +83,7 @@ export default {
   color: #5a5a5a;
 }
 .grey_card {
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
   border-radius: 10px;
   padding: 20px 10px 10px 10px;
   position: relative;
@@ -93,6 +95,7 @@ export default {
 .detail_text {
   width: 100%;
   word-wrap: break-word;
+  line-height: 30px;
 }
 .float_tag {
   position: absolute;
