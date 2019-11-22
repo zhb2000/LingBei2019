@@ -1,6 +1,7 @@
 module.exports = {
   publicPath: './',
   pages: {
+    //国漫 页面
     worklist: {
       // page 的入口
       entry: 'src/views/worklist/main.js',
@@ -15,6 +16,7 @@ module.exports = {
       // 提取出来的通用 chunk 和 vendor chunk。
       chunks: ['chunk-vendors', 'chunk-common', 'worklist']
     },
+    //画板 页面
     paintingboard: {
       entry: 'src/views/paintingboard/main.js',
       template: 'src/views/paintingboard/index.html',
@@ -22,12 +24,21 @@ module.exports = {
       title: '画板-试一试！',
       chunks: ['chunk-vendors', 'chunk-common', 'paintingboard']
     },
+    //广场 页面
     square: {
       entry: 'src/views/square/main.js',
       template: 'src/views/paintingboard/index.html',
       filename: 'square.html',
       title: '广场',
       chunks: ['chunk-vendors', 'chunk-common', 'square']
+    },
+    //详情 页面
+    detail: {
+      entry: 'src/views/detail/main.js',
+      template: 'src/views/detail/index.html',
+      filename: 'detail.html',
+      title: '详情',
+      chunks: ['chunk-vendors', 'chunk-common', 'detail']
     },
     // 当使用只有入口的字符串格式时，
     // 模板会被推导为 `public/subpage.html`
