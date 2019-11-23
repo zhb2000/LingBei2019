@@ -1,5 +1,8 @@
 <template>
-  <div class="navbar_outer">
+  <div
+    class="navbar_outer"
+    :class="{transparent_outer:transparent,not_transparent_outer:!transparent}"
+  >
     <img class="navbar_logo" src="../assets/logo.png" />
     <ul class="navbar">
       <li v-for="item in titleArray" :key="item.id">
@@ -19,7 +22,7 @@ export default {
     return {
       //对象数组
       titleArray: [
-        { id: 0, title: "首页", link: "https://www.baidu.com" },
+        { id: 0, title: "首页", link: "home.html" },
         { id: 1, title: "国漫", link: "worklist.html" },
         { id: 2, title: "广场", link: "square.html" },
         { id: 3, title: "画板", link: "paintingboard.html" }
@@ -28,7 +31,15 @@ export default {
   },
   props: {
     //哪一个被激活,从0开始编号
-    selected: Number
+    selected: {
+      type: Number,
+      required: true
+    },
+    //是否启用透明样式
+    transparent: {
+      type: Boolean,
+      default: false
+    }
   }
 };
 </script>
@@ -41,8 +52,13 @@ export default {
   width: 100%;
   height: 50px;
   box-sizing: border-box;
-  background-color: #474747;
   overflow: hidden;
+}
+.not_transparent_outer {
+  background-color: #474747;
+}
+.transparent_outer {
+  background-color: #474747b4;
 }
 
 /**导航栏的logo图片 */
@@ -64,7 +80,6 @@ export default {
   border: 0px;
   color: white;
   height: 100%;
-  width: 100px;
   border-radius: 15px;
   border: 0px solid;
   transition: 0.5s;
@@ -125,6 +140,9 @@ export default {
   .navbar_button_outer {
     padding: 10px 50px;
   }
+  .navbar_button {
+    width: 100px;
+  }
   .navbar_logo {
     padding: 10px 50px;
   }
@@ -136,8 +154,11 @@ export default {
   .navbar_button_outer {
     padding: 10px 10px;
   }
+  .navbar_button {
+    width: 80px;
+  }
   .navbar_logo {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
 }
 </style>

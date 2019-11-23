@@ -91,7 +91,8 @@ export default {
   list-style-type: none;
   margin: auto;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   height: 100%;
 }
 
@@ -151,10 +152,10 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .navbar_outer {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 90px 1fr 90px;
   }
   .type_list > li {
-    padding: 8px 1px;
+    padding: 8px 0px;
   }
 }
 </style>

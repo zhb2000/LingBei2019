@@ -40,6 +40,23 @@ module.exports = {
       title: '详情',
       chunks: ['chunk-vendors', 'chunk-common', 'detail']
     },
+    //首页 页面
+    home: {
+      entry: 'src/views/home/main.js',
+      template: 'src/views/home/index.html',
+      filename: 'home.html',
+      title: '首页',
+      chunks: ['chunk-vendors', 'chunk-common', 'home']
+    },
+    //登录 页面
+    // login: {
+    //   entry: 'src/views/login/main.js',
+    //   template: 'src/views/login/index.html',
+    //   filename: 'login.html',
+    //   title: '登录',
+    //   chunks: ['chunk-vendors', 'chunk-common', 'login']
+    // },
+    
     // 当使用只有入口的字符串格式时，
     // 模板会被推导为 `public/subpage.html`
     // 并且如果找不到的话，就回退到 `public/index.html`。
