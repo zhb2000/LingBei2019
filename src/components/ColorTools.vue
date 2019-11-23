@@ -5,7 +5,8 @@
       :key="color.id"
       :src="color.src"
       class="color"
-      :class="{active:color.id==selectedColor}"
+      :class="{active:color.id===selectedColor}"
+      @click="$emit('change-color', color.id)"
     />
   </div>
 </template>

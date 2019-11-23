@@ -1,8 +1,8 @@
 <template>
   <div class="bar">
     <div></div>
-    <pen-tools :selected-pen="selectedPen" />
-    <color-tools :selected-color="selectedColor" />
+    <pen-tools :selected-pen="selectedPen" @change-pen="$emit('change-pen',$event)" />
+    <color-tools :selected-color="selectedColor" @change-color="$emit('change-color',$event)" />
     <div></div>
   </div>
 </template>

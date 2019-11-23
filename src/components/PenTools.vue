@@ -5,7 +5,8 @@
       :key="pen.id"
       :src="pen.src"
       class="pen"
-      :class="{active:pen.id==selectedPen}"
+      :class="{active:pen.id===selectedPen}"
+      @click="$emit('change-pen', pen.id)"
     />
   </div>
 </template>

@@ -119,6 +119,7 @@ export default {
   grid-template-columns: 17px auto;
   align-items: center;
   column-gap: 5px;
+  word-break: keep-all;
 }
 .icon {
   display: inline-block;

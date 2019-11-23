@@ -27,7 +27,6 @@ export default {
 .whole_win_card {
   width: 100vw;
   height: 100vh;
-  background-color: antiquewhite;
   position: relative;
   overflow: hidden;
 }
@@ -49,6 +48,8 @@ export default {
   left: 0;
   z-index: 20;
   overflow: hidden;
+  animation: to_up 1.5s;
+  animation-delay: 0.5s;
 }
 .character {
   height: 100%;
@@ -60,6 +61,8 @@ export default {
   right: 70px;
   height: 200px;
   z-index: 25;
+  animation: to_down 1.5s;
+  animation-delay: 0.5s;
 }
 .card {
   position: absolute;
@@ -71,11 +74,41 @@ export default {
   color: white;
   z-index: 30;
   border-radius: 10px;
+  animation: transparency 2s;
+  animation-delay: 0.5s;
 }
 .grey_text {
-  color: #A6A6A6;
+  color: #a6a6a6;
 }
-.grey_text a{
-    color: #A6A6A6;
+.grey_text a {
+  color: #a6a6a6;
+}
+@keyframes to_up {
+  0% {
+    bottom: -200px;
+    opacity: 50%;
+  }
+  100% {
+    bottom: 0;
+    opacity: 100%;
+  }
+}
+@keyframes to_down {
+  0% {
+    top: -200px;
+    opacity: 50%;
+  }
+  100% {
+    top: 70px;
+    opacity: 100%;
+  }
+}
+@keyframes transparency {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 </style>

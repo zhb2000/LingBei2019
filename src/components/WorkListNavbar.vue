@@ -17,6 +17,7 @@
         class="dropdown"
         :itemArray="rightDropdownArray"
         :selected="rightDropdownSelected"
+        @dropdown-select="$emit('sort-change',$event)"
       />
     </div>
   </div>
@@ -46,21 +47,23 @@ export default {
 
       //左侧下拉菜单对象数组
       leftDropdownArray: [{ id: 0, title: "电影" }, { id: 1, title: "漫画" }],
-      //左侧下拉菜单被选中
-      leftDropdownSelected: 0,
 
       //右侧下拉菜单对象数组
       rightDropdownArray: [
-        { id: 0, title: "最热" },
-        { id: 1, title: "上映时间" }
+        { id: 0, title: "默认" },
+        { id: 1, title: "上映时间" },
+        { id: 2, title: "评分" },
+        { id: 3, title: "名称" }
       ],
-      //右侧下拉菜单被选中
-      rightDropdownSelected: 1
     };
   },
   props: {
     //哪一个被激活,从0开始编号
-    typeSelected: Number
+    typeSelected: Number,
+    //左侧下拉菜单被选中
+    leftDropdownSelected: Number,
+    //右侧下拉菜单被选中
+    rightDropdownSelected: Number
   }
 };
 </script>

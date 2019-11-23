@@ -2,18 +2,23 @@
   <div id="app">
     <div class="navbar_area">
       <my-navbar :selected="3" />
-      <painting-navbar title="无标题-我的作品"/>
+      <painting-navbar title="无标题-我的作品" />
     </div>
 
     <my-grid>
       <template v-slot:picture>
-        <painting-pic :pic-src="picSrc"/>
+        <painting-pic :pic-src="picSrc" />
       </template>
       <template v-slot:board>
         <draw-board />
       </template>
       <template v-slot:toolbar>
-        <painting-toolbar :selectedPen="3" :selectedColor="0"/>
+        <painting-toolbar
+          :selected-pen="selectedPen"
+          :selected-color="selectedColor"
+          @change-pen="selectedPen = $event"
+          @change-color="selectedColor = $event"
+        />
       </template>
     </my-grid>
   </div>
@@ -31,7 +36,9 @@ export default {
   name: "app",
   data: function() {
     return {
-      picSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg")
+      picSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
+      selectedPen: 0,
+      selectedColor: 0
     };
   },
   components: {

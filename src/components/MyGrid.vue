@@ -1,16 +1,26 @@
 <template>
-  <div class="my_grid">
+  <!-- <div class="my_grid">
     <slot></slot>
-  </div>
+  </div> -->
+  <transition-group name="flip-grid" tag="div" class="my_grid">
+    <ani-card v-for="item in cardItems" :cardItem="item" :key="item.id" />
+  </transition-group>
 </template>
 
 <script>
+import AnimationCard from "@/components/AnimationCard.vue";
+
 export default {
-  name: "MyGrid"
+  name: "MyGrid",
+  components:{
+    "ani-card": AnimationCard
+  },
+  props:{
+    cardItems:Array
+  }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .my_grid {
   height: 100%;
@@ -18,12 +28,12 @@ export default {
   display: grid;
   grid-gap: 30px;
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1101px) {
   .my_grid{
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media screen and (min-width: 801px) and (max-width: 1400px) {
+@media screen and (min-width: 801px) and (max-width: 1100px) {
   .my_grid{
     grid-template-columns: repeat(3, 1fr);
   }
@@ -33,5 +43,8 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
+}
+.flip-grid-move {
+  transition: transform 1s;
 }
 </style>

@@ -12,6 +12,7 @@
             :key="item.id"
             href="#"
             :class="{active: item.id===selected}"
+            @click="$emit('dropdown-select',item.id)"
           >{{item.title}}</a>
         </div>
       </transition>
