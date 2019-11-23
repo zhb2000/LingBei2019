@@ -39,7 +39,7 @@ export default {
 .outer {
   background-color: white;
   width: 100%;
-  padding-bottom: 120%;
+  padding-bottom: 100%;
   position: relative;
 }
 /**用于放置内容 */
@@ -64,7 +64,7 @@ export default {
   overflow: hidden;
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: 1fr 90px;
+  grid-template-rows: 1fr 70px;
 }
 /**放图片的区域 */
 .pic_area {

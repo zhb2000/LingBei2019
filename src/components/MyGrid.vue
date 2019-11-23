@@ -16,7 +16,22 @@ export default {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
+}
+@media screen and (min-width: 1401px) {
+  .my_grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .my_grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .my_grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
 }
 </style>

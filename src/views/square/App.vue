@@ -4,6 +4,7 @@
       <my-navbar :selected="2" />
     </div>
     <content-area style="margin-top:30px">
+      <group-header link="#" tag-text="时下热门" link-text="更多文章>>" />
       <card-group>
         <template #main-card>
           <pic-text-card :item="picTextCards[0]" />
@@ -23,6 +24,7 @@ import MyContentArea from "@/components/MyContentArea.vue";
 import CardGroupGrid from "@/components/CardGroupGrid.vue";
 import PicTextCard from "@/components/PicTextCard.vue";
 import SquareTextCard from "@/components/SquareTextCard.vue";
+import CardGroupHeader from "@/components/CardGroupHeader.vue";
 
 export default {
   name: "app",
@@ -31,7 +33,8 @@ export default {
     "content-area": MyContentArea,
     "card-group": CardGroupGrid,
     "pic-text-card": PicTextCard,
-    "text-card": SquareTextCard
+    "text-card": SquareTextCard,
+    "group-header": CardGroupHeader
   },
   data: function() {
     return {
@@ -92,5 +95,6 @@ body {
   width: 100%;
   top: 0px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 </style>

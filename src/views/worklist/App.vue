@@ -108,5 +108,6 @@ body {
   width: 100%;
   top: 0px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 </style>

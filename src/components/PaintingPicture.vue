@@ -66,5 +66,6 @@ export default {
 
 .picture{
     width: 300px;
+    margin: 30px 20px;
 }
 </style>

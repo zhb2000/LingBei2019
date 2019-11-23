@@ -41,7 +41,7 @@ export default {
 .outer {
   background-color: white;
   width: 100%;
-  padding-bottom: 120%;
+  padding-bottom: 100%;
   position: relative;
 }
 /**用于放置内容 */

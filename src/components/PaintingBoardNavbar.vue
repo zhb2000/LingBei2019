@@ -21,8 +21,8 @@
 <script>
 export default {
   name: "PaintingBoardNavbar",
-  props:{
-      title:String
+  props: {
+    title: String
   },
   data: function() {
     return {
@@ -43,9 +43,9 @@ export default {
   overflow: hidden;
   color: grey;
   display: grid;
-  grid-template-columns: 170px 1fr 200px 1fr 170px;
   grid-template-rows: 50px;
   background-color: white;
+  transition: 0.3s;
 }
 
 .button_img {
@@ -64,12 +64,23 @@ export default {
 
 .center_area {
   text-align: center;
-
 }
 
 .title_area {
   height: 100%;
   display: grid;
   align-items: center;
+}
+
+@media screen and (min-width: 901px) {
+  .navbar {
+    grid-template-columns: 170px 1fr 200px 1fr 170px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    grid-template-columns: 150px 0fr 1fr 0fr 100px;
+  }
 }
 </style>

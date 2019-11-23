@@ -50,7 +50,10 @@ export default {
       leftDropdownSelected: 0,
 
       //右侧下拉菜单对象数组
-      rightDropdownArray: [{ id: 0, title: "最热" }, { id: 1, title: "上映时间" }],
+      rightDropdownArray: [
+        { id: 0, title: "最热" },
+        { id: 1, title: "上映时间" }
+      ],
       //右侧下拉菜单被选中
       rightDropdownSelected: 1
     };
@@ -70,12 +73,12 @@ export default {
   background-color: #ffffff;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  transition: 0.3s;
 }
 
 .dropdown_outer {
   padding: 10px 0px;
-  text-align: center;/*让按钮水平居中 */
+  text-align: center; /*让按钮水平居中 */
 }
 
 /**块状元素定宽+margin: auto来水平居中 */
@@ -98,24 +101,24 @@ export default {
   display: block;
   color: black;
   text-align: center;
-  padding: 8px 10px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .type_list > li > div {
-    height: 100%;
-    padding: 6px 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
+  height: 100%;
+  padding: 6px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.type_list > li.active > div{
-    background-color: #ff6a6a;
+.type_list > li.active > div {
+  background-color: #ff6a6a;
 }
 
-.type_list > li.active > div:hover{
-    font-weight: bold;
+.type_list > li.active > div:hover {
+  font-weight: bold;
 }
 
 /*非当前项目鼠标悬浮*/
@@ -129,5 +132,29 @@ export default {
 /*当前项目*/
 .type_list .active {
   color: white;
+}
+@media screen and (min-width: 1401px) {
+  .navbar_outer {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+  .type_list > li {
+    padding: 8px 10px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1400px) {
+  .navbar_outer {
+    grid-template-columns: 1fr 4.5fr 1fr;
+  }
+  .type_list > li {
+    padding: 8px 3px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar_outer {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .type_list > li {
+    padding: 8px 1px;
+  }
 }
 </style>
