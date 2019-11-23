@@ -34,29 +34,53 @@ export default {
     "c c d";
   column-gap: 20px;
   row-gap: 30px;
+  transition: 0.3s;
 }
 .introduction_area {
   grid-column-start: a-start;
   grid-column-end: a-end;
   grid-row-start: a-start;
   grid-row-end: a-end;
+  transition: 0.3s;
 }
 .pictures_area {
   grid-column-start: b-start;
   grid-column-end: b-end;
   grid-row-start: b-start;
   grid-row-end: b-end;
+  transition: 0.3s;
 }
 .comments_area {
   grid-column-start: c-start;
   grid-column-end: c-end;
   grid-row-start: c-start;
   grid-row-end: c-end;
+  transition: 0.3s;
 }
 .news_area {
   grid-column-start: d-start;
   grid-column-end: d-end;
   grid-row-start: d-start;
   grid-row-end: d-end;
+  transition: 0.3s;
+}
+@media screen and (min-width: 801px) {
+  .my_grid{
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c d";
+  }
+}
+@media screen and (max-width: 800px) {
+  .my_grid{
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c c"
+    "d d d";
+  }
 }
 </style>

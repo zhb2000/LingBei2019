@@ -13,9 +13,7 @@
         </div>
         <div class="grey_card">
           <div class="text_wrapper">
-            <div class="detail_text">
-              {{item.detail}}
-            </div>
+            <div class="detail_text">{{item.detail}}</div>
           </div>
           <float-tag class="float_tag">简介</float-tag>
         </div>
@@ -50,14 +48,15 @@ export default {
 }
 .card_grid {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: auto;
   overflow: hidden;
-  column-gap: 30px;
+  gap: 30px;
 }
-/* .img_area {
-  padding: 0 10px 0 0;
-} */
+.img_area {
+  grid-column-start: a-start;
+  grid-column-end: a-end;
+  grid-row-start: a-start;
+  grid-column-end: a-end;
+}
 .image {
   width: 100%;
   border-radius: 4px;
@@ -65,6 +64,10 @@ export default {
 .text_area {
   width: 100%;
   overflow: hidden;
+  grid-column-start: b-start;
+  grid-column-end: b-end;
+  grid-row-start: b-start;
+  grid-column-end: b-end;
 }
 .brief {
   margin-bottom: 30px;
@@ -101,5 +104,28 @@ export default {
   position: absolute;
   top: -15px;
   left: 10px;
+}
+@media screen and (min-width: 801px) {
+  .card_grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "a b";
+  }
+  .image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card_grid {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "b"
+      "a";
+  }
+  .image {
+    width: 200px;
+  }
 }
 </style>
