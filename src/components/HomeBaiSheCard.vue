@@ -42,7 +42,7 @@ export default {
   z-index: 10;
 }
 .character_group {
-  height: 250px;
+  height: 400px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -50,6 +50,7 @@ export default {
   overflow: hidden;
   animation: to_up 1.5s;
   animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 .character {
   height: 100%;
@@ -63,12 +64,13 @@ export default {
   z-index: 25;
   animation: to_down 1.5s;
   animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 .card {
   position: absolute;
   right: 70px;
   bottom: 70px;
-  width: 300px;
+  width: 400px;
   padding: 20px 30px;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
@@ -76,6 +78,8 @@ export default {
   border-radius: 10px;
   animation: transparency 2s;
   animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  line-height: 30px;
 }
 .grey_text {
   color: #a6a6a6;

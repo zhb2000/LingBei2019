@@ -4,22 +4,29 @@
       <my-navbar :selected="0" :transparent="true" />
     </div>
     <div id="content_area">
+      <first-screen />
       <bai-she />
-      <bai-she />
-      <bai-she />
+      <da-yu />
+      <ne-zha />
     </div>
   </div>
 </template>
 
 <script>
 import MyNavbar from "@/components/MyNavbar.vue";
+import HomeFirst from "@/components/HomeFirst.vue";
 import HomeBaiSheCard from "@/components/HomeBaiSheCard.vue";
+import HomeDaYu from "@/components/HomeDaYu.vue";
+import HomeNeZha from "@/components/HomeNeZha.vue";
 
 export default {
   name: "app",
   components: {
     "my-navbar": MyNavbar,
-    "bai-she": HomeBaiSheCard
+    "bai-she": HomeBaiSheCard,
+    "first-screen": HomeFirst,
+    "da-yu": HomeDaYu,
+    "ne-zha": HomeNeZha
   }
 };
 </script>
@@ -55,6 +62,5 @@ body {
 #content_area {
   width: 100%;
   height: 100%;
-  margin-bottom: 100px;
 }
 </style>

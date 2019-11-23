@@ -59,12 +59,13 @@ export default {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 2px 20px 3px #44546a3a;
   background-color: white;
   overflow: hidden;
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: 1fr 70px;
+  grid-template-rows: 1fr 90px;
 }
 /**放图片的区域 */
 .pic_area {

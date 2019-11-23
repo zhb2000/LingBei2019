@@ -43,7 +43,8 @@ export default {
   width: 100%;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 2px 20px 3px #44546a3a;
   overflow: hidden;
 }
 .card_grid {

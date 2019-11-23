@@ -10,9 +10,9 @@
           <pic-text-card :item="picTextCards[0]" />
         </template>
         <pic-text-card :item="picTextCards[1]" />
-        <pic-text-card :item="picTextCards[1]" />
+        <pic-text-card :item="picTextCards[2]" />
         <text-card :item="textCards[0]" />
-        <text-card :item="textCards[0]" />
+        <text-card :item="textCards[1]" />
       </card-group>
     </content-area>
   </div>
@@ -40,26 +40,41 @@ export default {
     return {
       picTextCards: [
         {
-          link: "https://www.baidu.com",
-          imgLink: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          title: "标题",
-          description: "描述",
+          link: "#",
+          imgLink: require("@/assets/art_works_list_img/哪吒之魔童降世.jpg"),
+          title: "哪吒的幕后故事：六年打磨剧本，投资方靠它改命",
+          description: "荔枝娱乐特报 · 2019年07月26日",
           tag: "幕后"
         },
         {
-          link: "https://www.baidu.com",
+          link: "#",
+          imgLink: require("@/assets/art_works_list_img/白蛇：缘起.jpg"),
+          title: "《白蛇：缘起》幕后起底",
+          description: "wuhu动画人空间 · 2019-01-15",
+          tag: "幕后"
+        },
+        {
+          link: "#",
           imgLink: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          title: "标题",
-          description: "描述",
+          title: "《罗小黑战记》幕后故事",
+          description: "whu动画评论 · 2019-01-05",
           tag: "幕后"
         }
       ],
       textCards: [
         {
-          link: "https://www.baidu.com",
+          link: "detail.html",
           imgLink: require("@/assets/profile_photo/头像-18.jpg"),
           comment:
-            "lalalalalalalalalalalalalalalalalalalalalalalalalalalalalala",
+            "比我预想的还！要！好！看！画面够美打斗也够流畅，剧情不复杂，笑泪皆具，大圣三百六十度无死角的帅",
+          noteName: "西游记之大圣归来",
+          tag: "热评"
+        },
+        {
+          link: "detail.html",
+          imgLink: require("@/assets/profile_photo/头像-2.jpg"),
+          comment:
+            "意外的好看！！！制作精良，有让人眼前一亮的小细节，笑点布置得还算密集，本土味道极浓的民乐bgm上花了很大的心思。",
           noteName: "西游记之大圣归来",
           tag: "热评"
         }

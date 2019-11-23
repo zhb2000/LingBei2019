@@ -1,24 +1,26 @@
 <template>
   <div class="outer">
     <div class="card">
-      <img class="ani_img" :src="cardItem.imgSrc" />
-      <div class="card_content_area">
-        <div class="left_content">
-          <div>
-            <div class="title_area">
-              <img src="@/assets/icon/movie.svg" class="icon" />
-              <div class="title">{{cardItem.title}}</div>
+      <a :href="(cardItem.link==undefined||cardItem.link==null) ? '#' : cardItem.link" class="card_link">
+        <img class="ani_img" :src="cardItem.imgSrc" />
+        <div class="card_content_area">
+          <div class="left_content">
+            <div>
+              <div class="title_area">
+                <img src="@/assets/icon/movie.svg" class="icon" />
+                <div class="title">{{cardItem.title}}</div>
+              </div>
+              <div class="date">{{cardItem.date}}</div>
             </div>
-            <div class="date">{{cardItem.date}}</div>
+          </div>
+          <div class="right_content">
+            <div class="star_area">
+              <img src="@/assets/icon/star_icon/1.svg" class="star_icon" />
+              <div class="rate">{{cardItem.rate}}</div>
+            </div>
           </div>
         </div>
-        <div class="right_content">
-          <div class="star_area">
-            <img src="@/assets/icon/star_icon/1.svg" class="star_icon">
-          <div class=rate>{{cardItem.rate}}</div>
-          </div>
-        </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -49,14 +51,20 @@ export default {
   background-color: white;
   border-radius: 4px;
   border: 0px solid;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 2px 20px 3px #44546a3a;
   overflow: hidden;
   transition: 0.5s;
 }
 
 /*鼠标悬浮在卡片上*/
 .card:hover {
-  box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 20px 6px #44546a52;
+}
+
+.card_link {
+  text-decoration: none;
+  color: black;
 }
 
 /**卡片里的图片 */
@@ -114,7 +122,7 @@ export default {
   justify-items: right;
   align-items: center;
 }
-.title_area{
+.title_area {
   display: grid;
   grid-template-columns: 17px auto;
   align-items: center;
@@ -135,17 +143,17 @@ export default {
   color: gray;
   margin-top: 5px;
 }
-.star_area{
+.star_area {
   display: grid;
   grid-template-columns: 20px auto;
   column-gap: 5px;
   justify-items: center;
   align-items: center;
 }
-.star_icon{
+.star_icon {
   width: 100%;
 }
-.rate{
+.rate {
   font-size: 16px;
   color: #f5a33c;
 }

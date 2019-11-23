@@ -46,7 +46,7 @@ export default {
     return {
       //顶部介绍卡片的对象
       introductionItem: {
-        imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
+        imgSrc: require("@/assets/art_works_list_img/大圣归来.jpg"),
         title: "西游记之大圣归来（2015）",
         director: "田晓鹏",
         date: "date is here",
@@ -58,38 +58,18 @@ export default {
       imgArray: [
         {
           id: 0,
-          imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          link: "https://www.baidu.com"
+          imgSrc: require("@/assets/pics/pic0.jpg"),
+          link: "#"
         },
         {
           id: 1,
-          imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          link: "https://www.baidu.com"
+          imgSrc: require("@/assets/pics/pic1.jpg"),
+          link: "#"
         },
         {
           id: 2,
-          imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          link: "https://www.baidu.com"
-        },
-        {
-          id: 3,
-          imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          link: "https://www.baidu.com"
-        },
-        {
-          id: 4,
-          imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          link: "https://www.baidu.com"
-        },
-        {
-          id: 5,
-          imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          link: "https://www.baidu.com"
-        },
-        {
-          id: 6,
-          imgSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          link: "https://www.baidu.com"
+          imgSrc: require("@/assets/pics/pic2.jpg"),
+          link: "#"
         }
       ],
       newsArray: [
@@ -121,7 +101,7 @@ export default {
 /**把网页的边界去掉 */
 body {
   margin: 0 0;
-  background-color: #f6f6f6;
+  background-color: #ecf0f3;
   font-size: 16px;
 }
 

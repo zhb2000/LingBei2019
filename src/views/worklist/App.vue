@@ -42,10 +42,11 @@ export default {
       cardItems: [
         {
           id: 0,
-          imgSrc: require("@/assets/art_works_list_img/哪吒之魔童降世.jpg"),
-          title: "哪吒之魔童降世",
-          date: "2019-7-26",
-          rate: 8.5
+          imgSrc: require("@/assets/art_works_list_img/大圣归来.jpg"),
+          title: "大圣归来",
+          date: "2015-07-10",
+          rate: 7.9,
+          link: "detail.html"
         },
         {
           id: 1,
@@ -58,7 +59,7 @@ export default {
           id: 2,
           imgSrc: require("@/assets/art_works_list_img/白蛇：缘起.jpg"),
           title: "白蛇：缘起",
-          date: "2019-1-11",
+          date: "2019-01-11",
           rate: 7.9
         },
         {
@@ -172,6 +173,13 @@ export default {
           title: "秦时明月之诸子百家",
           date: "2010-05-11",
           rate: 9.3
+        },
+        {
+          id: 19,
+          imgSrc: require("@/assets/art_works_list_img/哪吒之魔童降世.jpg"),
+          title: "哪吒之魔童降世",
+          date: "2019-07-26",
+          rate: 8.5
         }
       ]
     };
@@ -180,7 +188,7 @@ export default {
     sortArray(sortType) {
       var theType = null;
       var compare = null;
-      
+
       //定义降序比较函数
       var compareDown = function(p) {
         return function(m, n) {
@@ -227,7 +235,7 @@ export default {
         theType = "title";
         compare = compareStrUp;
       }
-      
+
       this.cardItems.sort(compare(theType));
       this.rightSelected = sortType;
     }
@@ -239,7 +247,7 @@ export default {
 /**把网页的边界去掉 */
 body {
   margin: 0 0;
-  background-color: #f6f6f6;
+  background-color: #ebeef3;
   font-size: 16px;
 }
 

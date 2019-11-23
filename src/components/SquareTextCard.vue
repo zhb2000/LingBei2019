@@ -61,7 +61,8 @@ export default {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 2px 20px 3px #44546a3a;
   /* background-color: white; */
   background-image: linear-gradient(to bottom right, #feb1b5, #ebd2e3, #cddef8);
   overflow: hidden;
