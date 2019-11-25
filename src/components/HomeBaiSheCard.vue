@@ -42,7 +42,7 @@ export default {
   z-index: 10;
 }
 .character_group {
-  height: 400px;
+  height: 420px;
   position: absolute;
   bottom: 0;
   left: 0;

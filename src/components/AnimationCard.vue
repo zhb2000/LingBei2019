@@ -136,11 +136,12 @@ export default {
 .title {
   display: inline-block;
   font-size: 16px;
+  color: #484848;
   overflow: hidden;
 }
 .date {
   font-size: 14px;
-  color: gray;
+  color: #A6A6A6;
   margin-top: 5px;
 }
 .star_area {

@@ -41,23 +41,23 @@ export default {
       picTextCards: [
         {
           link: "#",
-          imgLink: require("@/assets/art_works_list_img/哪吒之魔童降世.jpg"),
+          imgLink: require("@/assets/square/s哪吒.jpg"),
           title: "哪吒的幕后故事：六年打磨剧本，投资方靠它改命",
           description: "荔枝娱乐特报 · 2019年07月26日",
           tag: "幕后"
         },
         {
           link: "#",
-          imgLink: require("@/assets/art_works_list_img/白蛇：缘起.jpg"),
+          imgLink: require("@/assets/square/s白蛇幕后起底.jpg"),
           title: "《白蛇：缘起》幕后起底",
           description: "wuhu动画人空间 · 2019-01-15",
           tag: "幕后"
         },
         {
           link: "#",
-          imgLink: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
-          title: "《罗小黑战记》幕后故事",
-          description: "whu动画评论 · 2019-01-05",
+          imgLink: require("@/assets/square/s罗小黑战记.jpg"),
+          title: "是营销还是实力？《罗小黑战记》凭什么这么火！",
+          description: "whu动画评论 · 2019-11-20",
           tag: "幕后"
         }
       ],
@@ -88,7 +88,7 @@ export default {
 /**把网页的边界去掉 */
 body {
   margin: 0 0;
-  background-color: #f6f6f6;
+  background-color: #ecf0f2;
   font-size: 16px;
 }
 

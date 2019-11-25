@@ -67,5 +67,9 @@ export default {
 .comment_item {
   width: 100%;
   margin-bottom: 20px;
+  color: #484848;
+  font-size: 14px;
+  line-height: 25px;
+  
 }
 </style>

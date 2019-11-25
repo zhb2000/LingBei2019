@@ -40,6 +40,7 @@ export default {
   background-color: white;
   width: 100%;
   padding-bottom: 100%;
+  border-radius: 10px;
   position: relative;
 }
 /**用于放置内容 */
@@ -51,6 +52,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 10px;
   text-decoration: none;
   color: black;
 }
@@ -66,7 +68,13 @@ export default {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: 1fr 90px;
+  transition: 0.5s;
 }
+
+.card_content:hover {
+  box-shadow: 0px 2px 20px 6px #44546a52;
+}
+
 /**放图片的区域 */
 .pic_area {
   height: 100%;
@@ -102,14 +110,15 @@ export default {
   word-wrap: break-word;
 }
 .title {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0 0 5px 0;
+  color:#484848;
   line-height: 22px;
 }
 .description {
-  font-size: 14px;
-  color: grey;
-  margin: 5px 0 0 0;
-  line-height: 16px;
+  font-size: 12px;
+  color:#A6A6A6;
+  margin: 10px 0 0 0;
+  line-height: 20px;
 }
 </style>

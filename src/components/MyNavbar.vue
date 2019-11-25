@@ -55,10 +55,10 @@ export default {
   overflow: hidden;
 }
 .not_transparent_outer {
-  background-color: #474747;
+  background-color: #414141;
 }
 .transparent_outer {
-  background-color: #474747b4;
+  background-color: #000000b4;
 }
 
 /**导航栏的logo图片 */

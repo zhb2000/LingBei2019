@@ -39,12 +39,12 @@ export default {
     display: block;
 }
 .link{
-    color: black;
+    color: #44546A;
     display: block;
     text-decoration: none;
 }
 .link:hover{
-    color: darkblue;
+    color: rgb(95, 117, 148);
     text-decoration: underline;
 }
 </style>

@@ -40,6 +40,7 @@ export default {
 /**固定宽高比 */
 .outer {
   background-color: white;
+  border-radius: 10px;
   width: 100%;
   padding-bottom: 100%;
   position: relative;
@@ -48,6 +49,7 @@ export default {
 .inner {
   display: block;
   background-color: white;
+  border-radius: 10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -69,7 +71,13 @@ export default {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: 30% 40% 30%;
+  transition: 0.5s;
 }
+
+.card_content:hover {
+  box-shadow: 0px 2px 20px 6px #44546a52;
+}
+
 .wrap_area {
   width: 100%;
   height: 100%;
@@ -81,8 +89,11 @@ export default {
   padding: 0 20px;
 }
 .comment {
+  
   width: 100%;
+  color: #44546A;
   word-wrap: break-word;
+  font-size: 15px;
 }
 .user {
   width: 100%;
@@ -97,8 +108,10 @@ export default {
   border-radius: 50%;
 }
 .user_note {
+  color: #44546A;
   width: 100%;
   overflow: hidden;
   word-wrap: break-word;
+  font-size: 14px;
 }
 </style>

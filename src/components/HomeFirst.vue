@@ -17,33 +17,33 @@ export default {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  background-color: black;
 }
 .bg_img {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: -150px;
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  animation: change_opacity 1.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
   z-index: 10;
 }
 .down_img {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   width: 100%;
   z-index: 15;
-  animation: to_up 1.5s;
+  animation: change_opacity 1.5s;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
-@keyframes to_up {
+@keyframes change_opacity {
   0% {
-    bottom: -200px;
+    opacity: 0%;
   }
   100% {
-    bottom: 0;
+    opacity: 100%;
   }
 }
 </style>

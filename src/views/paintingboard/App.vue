@@ -56,7 +56,7 @@ export default {
 /**把网页的边界去掉 */
 body {
   margin: 0 0;
-  background-color: #f6f6f6;
+  background-color: #ecf0f2;
   font-size: 16px;
 }
 

@@ -103,7 +103,7 @@ export default {
   float: left;
   height: 100%;
   display: block;
-  color: black;
+  color: #44546A;
   text-align: center;
   text-decoration: none;
   transition: 0.3s;

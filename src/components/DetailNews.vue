@@ -48,9 +48,13 @@ export default {
 .news_item {
   width: 100%;
   padding: 10px 0;
+  color: #a6a6a6;
+  font-size: 14px;
 }
 .news_item a {
-  color: black;
+  color: #484848;
+  font-size: 14px;
+  line-height: 25px;
 }
 .news_item div {
   width: 100%;
