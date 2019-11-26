@@ -2,20 +2,18 @@
   <div class="dropdown" @mouseleave="hide()">
     <button class="dropdown_button" @click="change()">{{itemArray[selected].title}} ▼</button>
     <div class="menu_wrapper">
-      <transition>
-        <div
-          class="dropdown_content"
-          :class="{dropdown_content_show:isShow,dropdown_content_hide:!isShow}"
-        >
-          <a
-            v-for="item in itemArray"
-            :key="item.id"
-            href="#"
-            :class="{active: item.id===selected}"
-            @click="$emit('dropdown-select',item.id)"
-          >{{item.title}}</a>
-        </div>
-      </transition>
+      <div
+        class="dropdown_content"
+        :class="{dropdown_content_show:isShow,dropdown_content_hide:!isShow,dropdown_content_right:isRight}"
+      >
+        <a
+          v-for="item in itemArray"
+          :key="item.id"
+          href="#"
+          :class="{active: item.id===selected}"
+          @click="$emit('dropdown-select',item.id)"
+        >{{item.title}}</a>
+      </div>
     </div>
   </div>
 </template>
@@ -28,7 +26,10 @@ export default {
     selected: Number,
 
     //下拉菜单与按钮右对齐
-    //isRight: Boolean,
+    isRight: {
+      default: false,
+      type: Boolean
+    },
 
     //下拉菜单数组
     //{id:Number,title:String}
@@ -62,8 +63,8 @@ export default {
 /**包括按钮和菜单在内的整个区域 */
 .dropdown {
   display: inline-block;
+  transition: 0.3s;
 }
-
 /**按钮 */
 .dropdown_button {
   height: 100%;
@@ -85,32 +86,36 @@ export default {
 .dropdown_content {
   display: none;
   position: absolute;
-  /* margin-top: 5px; */
   background-color: white;
   width: 90px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   overflow: hidden;
+  transition: 0.3s;
+}
+
+.dropdown_content_right {
+  right: 0px;
 }
 
 .menu_wrapper {
   padding-top: 5px;
+  transition: 0.3s;
+  width: 100%;
+  position: relative;
 }
 
 /**展示菜单 */
 .dropdown_content_show {
   display: block;
+  transition: 0.3s;
 }
 
 /**隐藏菜单 */
 .dropdown_content_hide {
   display: none;
+  transition: 0.3s;
 }
-
-/* .dropdown_content_right {
-  position: absolute;
-  right: 0px;
-} */
 /* 
 .dropdown:hover .dropdown_content{
   display: block;

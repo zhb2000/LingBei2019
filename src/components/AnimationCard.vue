@@ -51,15 +51,14 @@ export default {
   background-color: white;
   border-radius: 4px;
   border: 0px solid;
-  /* box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.2); */
-  box-shadow: 0px 2px 20px 3px #44546a3a;
+  box-shadow: 0px 2px 20px 3px rgba(68, 84, 106, 0.227);
   overflow: hidden;
   transition: 0.5s;
 }
 
 /*鼠标悬浮在卡片上*/
 .card:hover {
-  box-shadow: 0px 2px 20px 6px #44546a52;
+  box-shadow: 0px 2px 20px 6px rgba(68, 84, 106, 0.322);
 }
 
 .card_link {

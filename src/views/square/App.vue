@@ -3,7 +3,7 @@
     <div class="navbar_area">
       <my-navbar :selected="2" />
     </div>
-    <content-area style="margin-top:30px">
+    <content-area style="margin-top:30px; margin-bottom:30px;">
       <group-header link="#" tag-text="时下热门" link-text="更多文章>>" />
       <card-group>
         <template #main-card>

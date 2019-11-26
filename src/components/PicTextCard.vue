@@ -39,7 +39,7 @@ export default {
 .outer {
   background-color: white;
   width: 100%;
-  padding-bottom: 100%;
+  padding-bottom: 130%;
   border-radius: 10px;
   position: relative;
 }
@@ -62,7 +62,7 @@ export default {
   width: 100%;
   border-radius: 10px;
   /* box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2); */
-  box-shadow: 0px 2px 20px 3px #44546a3a;
+  box-shadow: 0px 2px 20px 3px rgba(68, 84, 106, 0.227);
   background-color: white;
   overflow: hidden;
   display: grid;
@@ -72,12 +72,11 @@ export default {
 }
 
 .card_content:hover {
-  box-shadow: 0px 2px 20px 6px #44546a52;
+  box-shadow: 0px 2px 20px 6px rgba(68, 84, 106, 0.322);
 }
 
 /**放图片的区域 */
 .pic_area {
-  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -89,7 +88,6 @@ export default {
 }
 /**文字区域，设置padding */
 .text_area {
-  width: 100%;
   height: 100%;
   overflow: hidden;
   padding: 0 20px;

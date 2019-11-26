@@ -21,7 +21,8 @@ export default {
 }
 .bg_img {
   position: absolute;
-  top: -150px;
+  /* top: -150px; */
+  top: 0;
   width: 100%;
   object-fit: cover;
   animation: change_opacity 1.5s;
@@ -40,10 +41,10 @@ export default {
 }
 @keyframes change_opacity {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 </style>

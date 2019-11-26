@@ -58,7 +58,7 @@ export default {
   background-color: #414141;
 }
 .transparent_outer {
-  background-color: #000000b4;
+  background-color: rgba(0, 0, 0, 0.706);
 }
 
 /**导航栏的logo图片 */

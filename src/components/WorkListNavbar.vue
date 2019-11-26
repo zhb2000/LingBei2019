@@ -17,6 +17,7 @@
         class="dropdown"
         :itemArray="rightDropdownArray"
         :selected="rightDropdownSelected"
+        :is-right="true"
         @dropdown-select="$emit('sort-change',$event)"
       />
     </div>
@@ -54,7 +55,7 @@ export default {
         { id: 1, title: "上映时间" },
         { id: 2, title: "评分" },
         { id: 3, title: "名称" }
-      ],
+      ]
     };
   },
   props: {
@@ -74,17 +75,17 @@ export default {
   width: 100%;
   height: 50px;
   background-color: #ffffff;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: grid;
   transition: 0.3s;
 }
 
 .dropdown_outer {
+  height: 50px; /*edge上dropdown_outer会突然变高溢出，只好把高度定死 */
   padding: 10px 0px;
   text-align: center; /*让按钮水平居中 */
 }
 
-/**块状元素定宽+margin: auto来水平居中 */
 .dropdown {
   height: 100%;
 }
@@ -103,18 +104,20 @@ export default {
   float: left;
   height: 100%;
   display: block;
-  color: #44546A;
+  color: #44546a;
   text-align: center;
   text-decoration: none;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 .type_list > li > div {
-  height: 100%;
+  /* height: 100%; */
   padding: 6px 10px;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .type_list > li.active > div {
@@ -129,8 +132,6 @@ export default {
 .type_list > li:not(.active) :hover {
   color: #ff6a6a;
   font-weight: bold;
-  /* color: white;
-  background-color: rgba(0, 0, 0, 0.2); */
 }
 
 /*当前项目*/

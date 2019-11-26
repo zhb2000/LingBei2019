@@ -42,7 +42,7 @@ export default {
   background-color: white;
   border-radius: 10px;
   width: 100%;
-  padding-bottom: 100%;
+  padding-bottom: 130%;
   position: relative;
 }
 /**用于放置内容 */
@@ -63,24 +63,21 @@ export default {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  /* box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2); */
-  box-shadow: 0px 2px 20px 3px #44546a3a;
-  /* background-color: white; */
+  box-shadow: 0px 2px 20px 3px rgba(68, 84, 106, 0.227);
   background-image: linear-gradient(to bottom right, #feb1b5, #ebd2e3, #cddef8);
   overflow: hidden;
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: 30% 40% 30%;
+  grid-template-rows: 45px 1fr 70px;
   transition: 0.5s;
 }
 
 .card_content:hover {
-  box-shadow: 0px 2px 20px 6px #44546a52;
+  box-shadow: 0px 2px 20px 6px rgba(68, 84, 106, 0.322);
 }
 
 .wrap_area {
   width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
@@ -89,7 +86,6 @@ export default {
   padding: 0 20px;
 }
 .comment {
-  
   width: 100%;
   color: #44546A;
   word-wrap: break-word;

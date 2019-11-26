@@ -18,7 +18,7 @@ export default {
 <style scoped>
 .group_grid {
   display: grid;
-  grid-gap: 30px;
+  gap: 30px;
   transition: 0.3s;
 }
 .big_area {
@@ -27,7 +27,7 @@ export default {
   grid-row-start: a-start;
   grid-row-end: a-end;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1101px) {
   .group_grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -36,27 +36,39 @@ export default {
       "a a d e";
   }
 }
-@media screen and (min-width: 601px) and (max-width: 1000px) {
+@media screen and (min-width: 701px) and (max-width: 1100px) {
   .group_grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-      "a a"
-      "a a"
-      "b c"
-      "d e";
+      "a a b"
+      "a a c"
+      "d e f";
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 501px) and (max-width: 700px) {
   .group_grid {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
     grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d"
-      "e";
+      "a b"
+      "c d"
+      "e f";
+  }
+}
+@media screen and (max-width: 500px) {
+  .group_grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
   }
 }
 </style>

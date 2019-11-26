@@ -26,7 +26,8 @@ export default {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-gap: 30px;
+  gap: 30px;
+  transition: 0.3s;
 }
 @media screen and (min-width: 1101px) {
   .my_grid{
@@ -38,10 +39,16 @@ export default {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
   .my_grid{
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .my_grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 .flip-grid-move {
