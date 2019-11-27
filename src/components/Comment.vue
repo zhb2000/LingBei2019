@@ -5,16 +5,31 @@
       <star-rate class="star_rate" :rate="item.rate" />
     </div>
     <div class="comment_grey_area">
-      <div class="grey_card">{{item.text}}</div>
+      <div class="grey_card">
+        {{item.text}}
+        <!-- <div>{{info}}</div> -->
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import FiveStarDisplay from "@/components/FiveStarDisplay.vue";
+//import axios from "axios";
 
 export default {
   name: "Comment",
+  // data: function() {
+  //   return {
+  //     info: []
+  //   };
+  // },
+  // mounted() {
+  //   axios
+  //     .get("./testjson/test.json")
+  //     .then(response => (this.info = response.data.sites))
+  //     .catch(error => (this.info = error));
+  // },
   props: {
     //{id:Number,imgSrc:String,text:String,rate:Number}
     item: Object

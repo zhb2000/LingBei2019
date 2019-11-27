@@ -1,7 +1,7 @@
 <template>
   <div class="whole_win_card">
-    <img src="@/assets/home/firstScene-title.png" class="bg_img" />
-    <img src="@/assets/home/firstScene-pic.png" class="down_img" />
+    <img src="pic_res/home/firstScene-title.png" class="bg_img" />
+    <img src="pic_res/home/firstScene-pic.png" class="down_img" />
   </div>
 </template>
 

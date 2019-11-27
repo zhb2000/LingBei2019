@@ -3,16 +3,17 @@
     <div class="navbar_area">
       <my-navbar :selected="2" />
     </div>
-    <content-area style="margin-top:30px; margin-bottom:30px;">
+    <content-area v-if="loadOK" style="margin-top:30px; margin-bottom:30px;">
       <group-header link="#" tag-text="时下热门" link-text="更多文章>>" />
       <card-group>
         <template #main-card>
-          <pic-text-card :item="picTextCards[0]" />
+          <pic-text-card v-if="bigCard.cardType===0" :item="bigCard" />
+          <pic-text-card v-if="bigCard.cardType===1" :item="bigCard" />
         </template>
-        <pic-text-card :item="picTextCards[1]" />
-        <pic-text-card :item="picTextCards[2]" />
-        <text-card :item="textCards[0]" />
-        <text-card :item="textCards[1]" />
+        <div v-for="card in cards" :key="card.id">
+          <pic-text-card v-if="card.cardType===0" :item="card" />
+          <text-card v-if="card.cardType===1" :item="card" />
+        </div>
       </card-group>
     </content-area>
   </div>
@@ -26,6 +27,8 @@ import PicTextCard from "@/components/PicTextCard.vue";
 import SquareTextCard from "@/components/SquareTextCard.vue";
 import CardGroupHeader from "@/components/CardGroupHeader.vue";
 
+import axios from "axios";
+
 export default {
   name: "app",
   components: {
@@ -36,49 +39,21 @@ export default {
     "text-card": SquareTextCard,
     "group-header": CardGroupHeader
   },
+  mounted() {
+    axios
+      .get("jsons/square_data/square.json")
+      .then(response => {
+        this.bigCard = response.data.bigCard;
+        this.cards = response.data.cards;
+        this.loadOK = true;
+      })
+      .catch(error => alert(error));
+  },
   data: function() {
     return {
-      picTextCards: [
-        {
-          link: "#",
-          imgLink: require("@/assets/square/s哪吒.jpg"),
-          title: "哪吒的幕后故事：六年打磨剧本，投资方靠它改命",
-          description: "荔枝娱乐特报 · 2019年07月26日",
-          tag: "幕后"
-        },
-        {
-          link: "#",
-          imgLink: require("@/assets/square/s白蛇幕后起底.jpg"),
-          title: "《白蛇：缘起》幕后起底",
-          description: "wuhu动画人空间 · 2019-01-15",
-          tag: "幕后"
-        },
-        {
-          link: "#",
-          imgLink: require("@/assets/square/s罗小黑战记.jpg"),
-          title: "是营销还是实力？《罗小黑战记》凭什么这么火！",
-          description: "whu动画评论 · 2019-11-20",
-          tag: "幕后"
-        }
-      ],
-      textCards: [
-        {
-          link: "detail.html",
-          imgLink: require("@/assets/profile_photo/头像-18.jpg"),
-          comment:
-            "比我预想的还！要！好！看！画面够美打斗也够流畅，剧情不复杂，笑泪皆具，大圣三百六十度无死角的帅",
-          noteName: "西游记之大圣归来",
-          tag: "热评"
-        },
-        {
-          link: "detail.html",
-          imgLink: require("@/assets/profile_photo/头像-2.jpg"),
-          comment:
-            "意外的好看！！！制作精良，有让人眼前一亮的小细节，笑点布置得还算密集，本土味道极浓的民乐bgm上花了很大的心思。",
-          noteName: "西游记之大圣归来",
-          tag: "热评"
-        }
-      ]
+      loadOK: false,
+      bigCard: null,
+      cards: null
     };
   }
 };

@@ -7,7 +7,7 @@
           <div class="left_content">
             <div>
               <div class="title_area">
-                <img src="@/assets/icon/movie.svg" class="icon" />
+                <img src="pic_res/icon/movie.svg" class="icon" />
                 <div class="title">{{cardItem.title}}</div>
               </div>
               <div class="date">{{cardItem.date}}</div>
@@ -15,7 +15,7 @@
           </div>
           <div class="right_content">
             <div class="star_area">
-              <img src="@/assets/icon/star_icon/1.svg" class="star_icon" />
+              <img src="pic_res/icon/star_icon/1.svg" class="star_icon" />
               <div class="rate">{{cardItem.rate}}</div>
             </div>
           </div>

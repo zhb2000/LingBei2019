@@ -20,11 +20,11 @@ export default {
   data: function() {
     return {
       pens: [
-        { id: 0, src: require("@/assets/painting_toolbar/pen/eraser.svg") },
-        { id: 1, src: require("@/assets/painting_toolbar/pen/pen.svg") },
-        { id: 2, src: require("@/assets/painting_toolbar/pen/pencil.svg") },
-        { id: 3, src: require("@/assets/painting_toolbar/pen/mark-1.svg") },
-        { id: 4, src: require("@/assets/painting_toolbar/pen/mark-2.svg") }
+        { id: 0, src: "pic_res/painting_toolbar/pen/eraser.svg" },
+        { id: 1, src: "pic_res/painting_toolbar/pen/pen.svg" },
+        { id: 2, src: "pic_res/painting_toolbar/pen/pencil.svg" },
+        { id: 3, src: "pic_res/painting_toolbar/pen/mark-1.svg" },
+        { id: 4, src: "pic_res/painting_toolbar/pen/mark-2.svg" }
       ]
     };
   }

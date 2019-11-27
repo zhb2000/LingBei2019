@@ -18,11 +18,11 @@ export default {
   methods: {
     starSrc(i) {
       if (this.rate - i > 0.5) {
-        return require("@/assets/icon/star_icon/1.svg");
+        return "pic_res/icon/star_icon/1.svg";
       } else if (this.rate - i > 0) {
-        return require("@/assets/icon/star_icon/0.5.svg");
+        return "pic_res/icon/star_icon/0.5.svg";
       } else {
-        return require("@/assets/icon/star_icon/0.svg");
+        return "pic_res/icon/star_icon/0.svg";
       }
     }
   }

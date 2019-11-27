@@ -26,11 +26,11 @@ export default {
   },
   data: function() {
     return {
-      backSrc: require("@/assets/painting_toolbar/button/back.svg"),
-      undoSrc: require("@/assets/painting_toolbar/button/undo.svg"),
-      editSrc: require("@/assets/painting_toolbar/button/edit.svg"),
-      saveSrc: require("@/assets/painting_toolbar/button/save.svg"),
-      shareSrc: require("@/assets/painting_toolbar/button/share.svg")
+      backSrc: "pic_res/painting_toolbar/button/back.svg",
+      undoSrc: "pic_res/painting_toolbar/button/undo.svg",
+      editSrc: "pic_res/painting_toolbar/button/edit.svg",
+      saveSrc: "pic_res/painting_toolbar/button/save.svg",
+      shareSrc: "pic_res/painting_toolbar/button/share.svg"
     };
   }
 };

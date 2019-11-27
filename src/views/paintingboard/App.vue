@@ -36,7 +36,7 @@ export default {
   name: "app",
   data: function() {
     return {
-      picSrc: require("@/assets/art_works_list_img/罗小黑战记.jpg"),
+      picSrc: "pic_res/art_works_list_img/罗小黑战记.jpg",
       selectedPen: 0,
       selectedColor: 0
     };

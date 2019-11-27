@@ -1,11 +1,11 @@
 <template>
   <div class="whole_win_card">
-    <img src="@/assets/home/dayu-background.png" class="bg_img" />
-    <img src="@/assets/home/dayu-pic1.png" class="left_img" />
-    <img src="@/assets/home/dayu-pic2.png" class="right_img" />
+    <img src="pic_res/home/dayu-background.png" class="bg_img" />
+    <img src="pic_res/home/dayu-pic1.png" class="left_img" />
+    <img src="pic_res/home/dayu-pic2.png" class="right_img" />
     <div class="wrapper">
       <div class="center_box">
-        <img src="@/assets/home/dayu-title.png" class="title_img" />
+        <img src="pic_res/home/dayu-title.png" class="title_img" />
         <div class="card">
           <p>所有活着的人类，都是海里一条巨大的鱼。出生的时候，他们从海的此岸出发。他们的生命就像横越大海，有时相遇，有时分开。死的时候，他们便到了岸，各去各的世界。</p>
           <p class="grey_text">

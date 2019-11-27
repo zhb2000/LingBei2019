@@ -29,9 +29,7 @@ export default {
   background-color: white;
   width: 100%;
   border-radius: 20px;
-  /* box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2); */
-  box-shadow: 0px 2px 20px 3px #44546a3a;
-  /* overflow: hidden; */
+  box-shadow: 0px 2px 20px 3px rgba(68, 84, 106, 0.227);
   padding: 30px 20px 20px 20px;
   position: relative;
 }

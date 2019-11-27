@@ -3,7 +3,7 @@
     class="navbar_outer"
     :class="{transparent_outer:transparent,not_transparent_outer:!transparent}"
   >
-    <img class="navbar_logo" src="../assets/logo.png" />
+    <img class="navbar_logo" src="pic_res/logo.png" />
     <ul class="navbar">
       <li v-for="item in titleArray" :key="item.id">
         <a :href="item.link" :class="{active: item.id==selected}">{{item.title}}</a>

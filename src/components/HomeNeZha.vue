@@ -1,11 +1,11 @@
 <template>
   <div class="whole_win_card">
-    <img src="@/assets/home/nezha-background.jpg" class="bg_img" />
-    <img src="@/assets/home/nezha-dragon.png" class="left_img" />
-    <img src="@/assets/home/nezha.png" class="right_img" />
+    <img src="pic_res/home/nezha-background.jpg" class="bg_img" />
+    <img src="pic_res/home/nezha-dragon.png" class="left_img" />
+    <img src="pic_res/home/nezha.png" class="right_img" />
     <div class="wrapper">
       <div class="center_box">
-        <img src="@/assets/home/nezha-title.png" class="title_img" />
+        <img src="pic_res/home/nezha-title.png" class="title_img" />
         <div class="card">
           <p>“我命由我不由天！是魔是仙，我自己决定！”</p>
           <p class="grey_text">

@@ -22,15 +22,15 @@ export default {
       colors: [
         {
           id: 0,
-          src: require("@/assets/painting_toolbar/color/lightGreen.svg")
+          src: "pic_res/painting_toolbar/color/lightGreen.svg"
         },
-        { id: 1, src: require("@/assets/painting_toolbar/color/green.svg") },
-        { id: 2, src: require("@/assets/painting_toolbar/color/darkCyan.svg") },
-        { id: 3, src: require("@/assets/painting_toolbar/color/darkBlue.svg") },
-        { id: 4, src: require("@/assets/painting_toolbar/color/black.svg") },
-        { id: 5, src: require("@/assets/painting_toolbar/color/milk.svg") },
-        { id: 6, src: require("@/assets/painting_toolbar/color/yellow.svg") },
-        { id: 7, src: require("@/assets/painting_toolbar/color/red.svg") }
+        { id: 1, src: "pic_res/painting_toolbar/color/green.svg" },
+        { id: 2, src: "pic_res/painting_toolbar/color/darkCyan.svg" },
+        { id: 3, src: "pic_res/painting_toolbar/color/darkBlue.svg" },
+        { id: 4, src: "pic_res/painting_toolbar/color/black.svg" },
+        { id: 5, src: "pic_res/painting_toolbar/color/milk.svg" },
+        { id: 6, src: "pic_res/painting_toolbar/color/yellow.svg" },
+        { id: 7, src: "pic_res/painting_toolbar/color/red.svg" }
       ]
     };
   }
