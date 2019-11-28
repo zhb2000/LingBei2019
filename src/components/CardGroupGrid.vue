@@ -19,6 +19,7 @@ export default {
 .group_grid {
   display: grid;
   gap: 30px;
+  grid-gap: 30px;
   transition: 0.3s;
 }
 .big_area {
@@ -52,6 +53,7 @@ export default {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    grid-gap: 20px;
     grid-template-areas:
       "a b"
       "c d"
@@ -63,6 +65,7 @@ export default {
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, 1fr);
     gap: 20px;
+    grid-gap: 20px;
     grid-template-areas:
     "a"
     "b"

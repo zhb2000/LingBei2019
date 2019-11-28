@@ -5,6 +5,7 @@
       <work-list-navbar
         :typeSelected="0"
         @sort-change="sortArray"
+        @reverse-sort="reverseArray"
         :leftDropdownSelected="leftSelected"
         :rightDropdownSelected="rightSelected"
       />
@@ -47,13 +48,20 @@ export default {
   },
   data: function() {
     return {
+      /**左侧下拉菜单选中项 */
       leftSelected: 0,
+      /**右侧下拉菜单选中项 */
       rightSelected: 0,
+      /**是否加载成功 */
       loadOK: false,
-      cardItems: null
+      /**作品列表对象数组 */
+      cardItems: []
     };
   },
   methods: {
+    /**
+     * 对cardItems数组排序
+     */
     sortArray(sortType) {
       var theType = null;
       var compare = null;
@@ -107,6 +115,12 @@ export default {
 
       this.cardItems.sort(compare(theType));
       this.rightSelected = sortType;
+    },
+    /**
+     * 反转cardItems数组
+     */
+    reverseArray(){
+      this.cardItems.reverse();
     }
   }
 };

@@ -22,6 +22,7 @@ export default {
 .my_grid {
   display: grid;
   gap: 20px;
+  grid-gap: 20px;
   margin-top: 30px;
   margin-bottom: 120px;
   transition: 0.3s;
@@ -65,7 +66,7 @@ export default {
     width: 800px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 701px) and (max-width: 900px) {
   .my_grid {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
@@ -78,6 +79,25 @@ export default {
   }
   .toolbar_area {
     width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .my_grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a"
+      "b";
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 160px;
+  }
+  .toolbar_area {
+    width: 100%;
+  }
+  .bottom_area {
+    height: 140px;
   }
 }
 </style>

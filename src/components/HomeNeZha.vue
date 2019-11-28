@@ -90,4 +90,23 @@ export default {
 .grey_text a {
   color: #c7bb5d;
 }
+@media screen and (max-width: 800px) {
+  .left_img{
+    width: 400px;
+  }
+  .right_img{
+    width: 500px;
+    top: -100px;
+    right: -50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .center_box {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+  .title_img {
+    width: 100%;
+  }
+}
 </style>

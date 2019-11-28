@@ -116,32 +116,34 @@ export default {
   display: none;
   transition: 0.3s;
 }
-/* 
-.dropdown:hover .dropdown_content{
-  display: block;
-} */
 
 /**菜单里的一项 */
 .dropdown_content a {
-  color: black;
   padding: 10px 10px;
   text-decoration: none;
   display: block;
+  text-align: center;
   transition: 0.3s;
 }
 
 /**菜单里的一项鼠标悬浮 */
-.dropdown_content a:hover:not(.active) {
+.dropdown_content a:hover {
   background-color: rgb(233, 233, 233);
 }
 
+.dropdown_content a:not(.active) {
+  color: black;
+}
+
 /**被选中的那一项 */
-.active {
-  background-color: lightgrey;
+.dropdown_content .active {
+  /* background-color: lightgrey; */
+  color: #ff6a6a;
+  font-weight: bold;
 }
 
 /** 被选中的那一项鼠标悬浮*/
-.active:hover {
+/* .active:hover {
   background-color: rgb(192, 192, 192);
-}
+} */
 </style>

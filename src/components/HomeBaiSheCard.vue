@@ -80,6 +80,7 @@ export default {
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
   line-height: 30px;
+  transition: 0.3s;
 }
 .grey_text {
   color: #a6a6a6;
@@ -113,6 +114,20 @@ export default {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 850px) {
+  .character_group {
+    height: 52vw;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    right: 0;
+    bottom: 70px;
+    width: calc(100% - 20px);
+    margin: 0 10px;
   }
 }
 </style>

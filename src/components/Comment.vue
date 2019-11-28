@@ -45,6 +45,7 @@ export default {
   display: grid;
   grid-template-columns: 50px 1fr;
   column-gap: 20px;
+  grid-column-gap: 20px;
 }
 .pic_star_area {
   width: 100%;

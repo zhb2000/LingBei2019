@@ -1,7 +1,10 @@
 <template>
   <div class="outer">
     <div class="card">
-      <a :href="(cardItem.link==undefined||cardItem.link==null) ? '#' : cardItem.link" class="card_link">
+      <a
+        :href="(cardItem.link==undefined||cardItem.link==null) ? '#' : cardItem.link"
+        class="card_link"
+      >
         <img class="ani_img" :src="cardItem.imgSrc" />
         <div class="card_content_area">
           <div class="left_content">
@@ -126,6 +129,7 @@ export default {
   grid-template-columns: 17px auto;
   align-items: center;
   column-gap: 5px;
+  grid-column-gap: 5px;
   word-break: keep-all;
 }
 .icon {
@@ -140,13 +144,14 @@ export default {
 }
 .date {
   font-size: 14px;
-  color: #A6A6A6;
+  color: #a6a6a6;
   margin-top: 5px;
 }
 .star_area {
   display: grid;
   grid-template-columns: 20px auto;
   column-gap: 5px;
+  grid-column-gap: 5px;
   justify-items: center;
   align-items: center;
 }

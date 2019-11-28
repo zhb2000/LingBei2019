@@ -50,6 +50,7 @@ export default {
   display: grid;
   overflow: hidden;
   gap: 30px;
+  grid-gap: 30px;
 }
 .img_area {
   grid-column-start: a-start;

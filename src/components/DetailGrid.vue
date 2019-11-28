@@ -33,7 +33,9 @@ export default {
     "b b b"
     "c c d";
   column-gap: 20px;
+  grid-column-gap: 20px;
   row-gap: 30px;
+  grid-row-gap: 30px;
   transition: 0.3s;
 }
 .introduction_area {

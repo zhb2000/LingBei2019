@@ -47,14 +47,16 @@ export default {
   bottom: 0;
   left: -100px;
   width: 400px;
-  z-index: 15;
+  z-index: 16;
+  transition: 0.3s;
 }
 .right_img {
   position: absolute;
   top: 0;
   right: -50px;
   width: 400px;
-  z-index: 16;
+  z-index: 15;
+  transition: 0.3s;
 }
 .wrapper {
   width: 100%;
@@ -69,6 +71,7 @@ export default {
 .center_box {
   width: 500px;
   margin: auto;
+  transition: 0.3s;
 }
 .title_img {
   padding-right: 50px;
@@ -78,11 +81,11 @@ export default {
 }
 .card {
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   color: black;
   border-radius: 10px;
   font-family: "宋体";
   font-size: 20px;
+  transition: 0.5s;
 }
 .grey_text {
   color: #471c0d;
@@ -91,5 +94,23 @@ export default {
 .grey_text a {
   color: #471c0d;
   font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .card {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .center_box {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+  .left_img {
+    width: 300px;
+  }
+  .right_img {
+    width: 300px;
+  }
 }
 </style>
