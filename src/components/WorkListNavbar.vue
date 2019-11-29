@@ -13,7 +13,10 @@
       </li>
     </ul>
     <div class="right_dropdown_outer">
-      <img src="pic_res/icon/more.svg" class="reverse_button" @click="$emit('reverse-sort')" />
+      <div class="reverse_button_area">
+        <img src="pic_res/icon/more.svg" class="reverse_button" @click="$emit('reverse-sort')" />
+        <!-- <div class="reverse_button">⇵</div> -->
+      </div>
       <div>
         <dropdown-button
           class="dropdown"
@@ -84,7 +87,7 @@ export default {
 }
 
 .dropdown_outer {
-  height: 50px; /*edge上dropdown_outer会突然变高溢出，只好把高度定死 */
+  height: 30px; /*edge上dropdown_outer会突然变高溢出，只好把高度定死 */
   padding: 10px 0px;
   text-align: center; /*让按钮水平居中 */
   transition: 0.3s;
@@ -94,7 +97,7 @@ export default {
   height: 30px;
   margin: 10px;
   display: grid;
-  grid-template-columns: 30px 1fr;
+  grid-template-columns: auto auto;
   justify-items: center;
   align-items: center;
   transition: 0.3s;
@@ -104,21 +107,27 @@ export default {
   height: 30px;
   display: inline-block;
 }
-
-.reverse_button {
+.reverse_button_area {
   height: 30px;
-  display: inline-block;
+  width: 20px;
+  display: grid;
+  align-items: center;
+}
+.reverse_button {
+  width: 100%;
   cursor: pointer;
 }
 
 /**必须要margin: auto否则会偏移出去，不知道为什么 */
 .type_list {
   list-style-type: none;
+  height: 30px;
   margin: auto;
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
   height: 100%;
+  transition: 0.3s;
 }
 
 .type_list > li {
@@ -133,7 +142,6 @@ export default {
 }
 
 .type_list > li > div {
-  /* height: 100%; */
   padding: 6px 10px;
   border-radius: 5px;
   overflow: hidden;
@@ -161,7 +169,7 @@ export default {
 }
 @media screen and (min-width: 1401px) {
   .navbar_outer {
-    grid-template-columns: 100px 1fr 140px;
+    grid-template-columns: 100px 1fr 125px;
   }
   .type_list > li {
     padding: 8px 10px;
@@ -169,7 +177,7 @@ export default {
 }
 @media screen and (min-width: 601px) and (max-width: 1400px) {
   .navbar_outer {
-    grid-template-columns: 90px 1fr 140px;
+    grid-template-columns: 90px 1fr 125px;
   }
   .type_list > li {
     padding: 8px 3px;
@@ -177,7 +185,7 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .navbar_outer {
-    grid-template-columns: 90px 1fr 140px;
+    grid-template-columns: 90px 1fr 125px;
   }
   .type_list > li {
     padding: 8px 0px;

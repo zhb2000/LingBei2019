@@ -1,4 +1,24 @@
 {
+    "swiperItems": [
+        {
+            "id": 0,
+            "link": "https://www.douban.com/gallery/topic/46660/",
+            "text": "《白蛇：缘起》中有哪些彩蛋和不易发现的细节？",
+            "imgSrc": "./pic_res/square/swiper/白蛇.jpg"
+        },
+        {
+            "id": 1,
+            "link": "http://finance.sina.com.cn/roll/2019-09-27/doc-iicezzrq8785121.shtml",
+            "text": "《哪吒》姊妹篇《姜子牙》春节档上映，能否再创奇迹？",
+            "imgSrc": "./pic_res/square/swiper/姜子牙.jpg"
+        },
+        {
+            "id": 2,
+            "link": "https://www.jianshu.com/p/0f02ecae90aa",
+            "text": "从“年更”到“周更”！豆瓣9.6的《罗小黑战记》，完成奇迹逆袭",
+            "imgSrc": "./pic_res/square/swiper/罗小黑.jpg"
+        }
+    ],
     "bigCard": {
         "cardType": 0,
         "link": "#",

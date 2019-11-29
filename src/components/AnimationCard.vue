@@ -131,6 +131,7 @@ export default {
   column-gap: 5px;
   grid-column-gap: 5px;
   word-break: keep-all;
+  overflow: hidden;
 }
 .icon {
   display: inline-block;
@@ -141,6 +142,8 @@ export default {
   font-size: 16px;
   color: #484848;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .date {
   font-size: 14px;

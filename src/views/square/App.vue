@@ -3,7 +3,8 @@
     <div class="navbar_area">
       <my-navbar :selected="2" />
     </div>
-    <content-area v-if="loadOK" style="margin-top:30px; margin-bottom:30px;">
+    <square-swiper v-if="loadOK" :items="swiperItems" id="square_swiper" />
+    <content-area v-if="loadOK" style="margin-top:0px; margin-bottom:30px;">
       <group-header link="#" tag-text="时下热门" link-text="更多文章>>" />
       <card-group>
         <template #main-card>
@@ -26,6 +27,7 @@ import CardGroupGrid from "@/components/CardGroupGrid.vue";
 import PicTextCard from "@/components/PicTextCard.vue";
 import SquareTextCard from "@/components/SquareTextCard.vue";
 import CardGroupHeader from "@/components/CardGroupHeader.vue";
+import SquareSwiper from "@/components/SquareSwiper.vue";
 
 import axios from "axios";
 
@@ -37,12 +39,14 @@ export default {
     "card-group": CardGroupGrid,
     "pic-text-card": PicTextCard,
     "text-card": SquareTextCard,
-    "group-header": CardGroupHeader
+    "group-header": CardGroupHeader,
+    "square-swiper": SquareSwiper
   },
   mounted() {
     axios
       .get("jsons/square_data/square.json")
       .then(response => {
+        this.swiperItems = response.data.swiperItems;
         this.bigCard = response.data.bigCard;
         this.cards = response.data.cards;
         this.loadOK = true;
@@ -53,7 +57,8 @@ export default {
     return {
       loadOK: false,
       bigCard: null,
-      cards: null
+      cards: [],
+      swiperItems: []
     };
   }
 };
@@ -86,5 +91,14 @@ body {
   top: 0px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+}
+#square_swiper {
+  margin-top: 30px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 600px) {
+  #square_swiper {
+    margin-top: 20px;
+  }
 }
 </style>
