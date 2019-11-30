@@ -10,7 +10,7 @@
         <painting-pic :pic-src="picSrc" />
       </template>
       <template v-slot:board>
-        <draw-board />
+        <draw-board :pen-width="widths[selectedPen]" :pen-color="colors[selectedColor]" :is-eraser="selectedPen===0" />
       </template>
       <template v-slot:toolbar>
         <painting-toolbar
@@ -36,9 +36,20 @@ export default {
   name: "app",
   data: function() {
     return {
-      picSrc: "pic_res/art_works_list_img/罗小黑战记.jpg",
-      selectedPen: 0,
-      selectedColor: 0
+      picSrc: "./pic_res/other/大护法-临摹.jpg",
+      selectedPen: 1,
+      selectedColor: 1,
+      widths: [30, 2, 1, 20, 4],
+      colors: [
+        "#bfdacb",
+        "#4b876b",
+        "#5c7f83",
+        "#354858",
+        "#111111",
+        "#f6e6cc",
+        "#ebb344",
+        "#cc4a2b"
+      ]
     };
   },
   components: {

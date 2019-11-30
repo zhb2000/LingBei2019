@@ -7,14 +7,16 @@
         :selected="leftDropdownSelected"
       />
     </div>
-    <ul class="type_list">
-      <li v-for="item in typeArray" :key="item.id" :class="{active: item.id===typeSelected}">
-        <div>{{item.title}}</div>
-      </li>
-    </ul>
+    <div class="list_wrapper">
+      <ul class="type_list">
+        <li v-for="item in typeArray" :key="item.id" :class="{active: item.id===typeSelected}">
+          <div>{{item.title}}</div>
+        </li>
+      </ul>
+    </div>
     <div class="right_dropdown_outer">
       <div class="reverse_button_area">
-        <img src="pic_res/icon/more.svg" class="reverse_button" @click="$emit('reverse-sort')" />
+        <img src="pic_res/icon/sort.svg" class="reverse_button" @click="$emit('reverse-sort')" />
         <!-- <div class="reverse_button">⇵</div> -->
       </div>
       <div>
@@ -95,7 +97,7 @@ export default {
 
 .right_dropdown_outer {
   height: 30px;
-  margin: 10px;
+  margin: 10px 10px 10px 0px;
   display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
@@ -109,7 +111,7 @@ export default {
 }
 .reverse_button_area {
   height: 30px;
-  width: 20px;
+  width: 15px;
   display: grid;
   align-items: center;
 }
@@ -117,23 +119,51 @@ export default {
   width: 100%;
   cursor: pointer;
 }
-
+/**保证list能横向滚动，并且把滚动条隐藏 */
+.list_wrapper{
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100%;
+  justify-items: center;
+}
 /**必须要margin: auto否则会偏移出去，不知道为什么 */
 .type_list {
   list-style-type: none;
-  height: 30px;
   margin: auto;
   padding: 0;
-  overflow-x: hidden;
   overflow-y: hidden;
   height: 100%;
   transition: 0.3s;
+  white-space: nowrap;
+  display: inline-block;
+  -ms-overflow-style: none;/**edge隐藏滚动条 */
+}
+/**chrome、safari隐藏滚动条 */
+.type_list::-webkit-scrollbar{
+  display: none;
+}
+/**强行针对宽度做自适应调整，宽的时候水平居中，窄的时候水平滚动 */
+@media screen and (min-width: 681px){
+  .type_list{
+    width: auto;
+    overflow-x: hidden;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 680px){
+  .type_list{
+    width: 100%;
+    overflow-x: scroll;
+    margin: 0;
+    height: calc(100% + 17px);
+  }
 }
 
 .type_list > li {
-  float: left;
+  /* float: left; */
   height: 100%;
-  display: block;
+  display: inline-block;
   color: #44546a;
   text-align: center;
   text-decoration: none;
@@ -169,7 +199,7 @@ export default {
 }
 @media screen and (min-width: 1401px) {
   .navbar_outer {
-    grid-template-columns: 100px 1fr 125px;
+    grid-template-columns: 100px 1fr 120px;
   }
   .type_list > li {
     padding: 8px 10px;
@@ -177,7 +207,7 @@ export default {
 }
 @media screen and (min-width: 601px) and (max-width: 1400px) {
   .navbar_outer {
-    grid-template-columns: 90px 1fr 125px;
+    grid-template-columns: 90px 1fr 120px;
   }
   .type_list > li {
     padding: 8px 3px;
@@ -185,7 +215,7 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .navbar_outer {
-    grid-template-columns: 90px 1fr 125px;
+    grid-template-columns: 90px 1fr 120px;
   }
   .type_list > li {
     padding: 8px 0px;

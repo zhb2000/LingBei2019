@@ -2,7 +2,7 @@
   <div class="card">
     <float-tag class="float_tag">剧照</float-tag>
     <div class="image_group">
-      <a v-for="item in imgArray" :key="item.id" :href="item.link">
+      <a target="_blank" v-for="item in imgArray" :key="item.id" :href="item.link">
         <img :src="item.imgSrc" class="image" />
       </a>
     </div>

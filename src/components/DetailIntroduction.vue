@@ -69,6 +69,7 @@ export default {
   grid-column-end: b-end;
   grid-row-start: b-start;
   grid-column-end: b-end;
+  color: #505050;
 }
 .brief {
   margin-bottom: 30px;
@@ -122,8 +123,8 @@ export default {
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
     grid-template-areas:
-      "b"
-      "a";
+      "a"
+      "b";
   }
   .image {
     width: 200px;

@@ -4,10 +4,21 @@
       <my-navbar :selected="0" :transparent="true" />
     </div>
     <div id="content_area">
-      <first-screen />
-      <bai-she />
-      <da-yu />
-      <ne-zha />
+      <swiper class="swiper-box" :options="swiperOption" ref="mySwiper">
+        <swiper-slide class="slide_page">
+          <first-screen />
+        </swiper-slide>
+        <swiper-slide class="slide_page">
+          <bai-she />
+        </swiper-slide>
+        <swiper-slide class="slide_page">
+          <da-yu />
+        </swiper-slide>
+        <swiper-slide class="slide_page">
+          <ne-zha />
+        </swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
     </div>
   </div>
 </template>
@@ -19,6 +30,9 @@ import HomeBaiSheCard from "@/components/HomeBaiSheCard.vue";
 import HomeDaYu from "@/components/HomeDaYu.vue";
 import HomeNeZha from "@/components/HomeNeZha.vue";
 
+import "swiper/dist/css/swiper.css";
+import { swiper, swiperSlide } from "vue-awesome-swiper";
+
 export default {
   name: "app",
   components: {
@@ -26,7 +40,27 @@ export default {
     "bai-she": HomeBaiSheCard,
     "first-screen": HomeFirst,
     "da-yu": HomeDaYu,
-    "ne-zha": HomeNeZha
+    "ne-zha": HomeNeZha,
+    swiper,
+    swiperSlide
+  },
+  data() {
+    return {
+      swiperOption: {
+        direction: "vertical",
+        mousewheel: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        speed: 600,
+        keyboard: true
+      }
+    };
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.swiper;
+    }
   }
 };
 </script>
@@ -60,6 +94,14 @@ body {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 #content_area {
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-box {
+  width: 100vw;
+  height: 100vh;
+}
+.slide_page {
   width: 100%;
   height: 100%;
 }

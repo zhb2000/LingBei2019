@@ -35,11 +35,11 @@ export default {
         centeredSlides: true,
         centeredSlidesBounds: true,
         slidesPerView: 1.3,
-        autoplay: {
-          delay: 4000,
-          stopOnLastSlide: false,
-          disableOnInteraction: false
-        },
+        // autoplay: {
+        //   delay: 4000,
+        //   stopOnLastSlide: false,
+        //   disableOnInteraction: false
+        // },
         pagination: {
           el: ".swiper-pagination",
           clickable: true
@@ -60,7 +60,7 @@ export default {
   transform: scale(0.9);
   padding-bottom: 30px;
 }
-.slide_page{
+.slide_page {
   transition: 0.3s;
   padding-bottom: 30px;
 }

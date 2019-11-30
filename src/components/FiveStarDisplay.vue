@@ -12,14 +12,15 @@ export default {
   },
   data: function() {
     return {
+      fiveRate: this.rate / 2,
       rangeArray: [0, 1, 2, 3, 4]
     };
   },
   methods: {
     starSrc(i) {
-      if (this.rate - i > 0.5) {
+      if (this.fiveRate - i > 0.5) {
         return "pic_res/icon/star_icon/1.svg";
-      } else if (this.rate - i > 0) {
+      } else if (this.fiveRate - i > 0) {
         return "pic_res/icon/star_icon/0.5.svg";
       } else {
         return "pic_res/icon/star_icon/0.svg";

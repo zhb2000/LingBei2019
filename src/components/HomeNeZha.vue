@@ -83,6 +83,7 @@ export default {
   color: #f3e264;
   z-index: 30;
   border-radius: 10px;
+  text-align: center;
 }
 .grey_text {
   color: #c7bb5d;

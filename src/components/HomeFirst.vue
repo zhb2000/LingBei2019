@@ -71,15 +71,15 @@ export default {
 .card {
   width: 100%;
   margin-top: 45vh;
-  color: white;
+  color: #F0DAC0;
   border-radius: 10px;
-  font-family: "宋体";
-  font-size: 20px;
+  /* font-family: "宋体"; */
+  font-size: 16px;
   transition: 0.5s;
 }
 .card a {
-  color: white;
-  font-weight: bold;
+  color: #807366;
+  /* font-weight: bold; */
 }
 @keyframes change_opacity {
   0% {

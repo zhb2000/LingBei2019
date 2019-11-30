@@ -54,6 +54,7 @@ export default {
   color: #484848;
   font-size: 14px;
   line-height: 25px;
+  text-decoration: underline;
 }
 .news_item div {
   width: 100%;

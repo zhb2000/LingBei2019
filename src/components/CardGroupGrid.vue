@@ -18,8 +18,8 @@ export default {
 <style scoped>
 .group_grid {
   display: grid;
-  gap: 30px;
-  grid-gap: 30px;
+  gap: 20px;
+  grid-gap: 20px;
   transition: 0.3s;
 }
 .big_area {
