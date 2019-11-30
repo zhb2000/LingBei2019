@@ -1,0 +1,78 @@
+{
+		"introductionItem": {
+				"imgSrc": "./pic_res/art_works_list_img/那年那兔那些事.jpg",
+				"title": "那年那兔那些事 第二季（2016）",
+				"director": "十一",
+				"date": "2015-11-06",
+				"type": "动画,冒险",
+				"rate": 8.9,
+				"detail": "兔子经过艰苦奋斗，终于排除万难建立了新的种花家。然而兔子饱受鹰酱、大熊的孤立，不得已和单纯的河马们交了朋友。在兔子的经济、军事援助下，以坦黑叔为代表的河马实现了军事上的长足发展，兔子也终于在第三世界立稳脚跟。与此同时，兔子和毛熊的关系不断恶化，双方在珍宝岛爆发了武装冲突。没有永远的朋友，只有永远的利益。曾经视为寇雠的兔子与鹰酱相互试探，最终建交。为了遏制毛熊的势力，鹰酱协助种花家重返联合国，并给予了极大了武器输出支持。种花家在兔子的带领下，一步步走向富强……"
+		},
+		"imgArray": [
+				{
+						"id": 0,
+						"imgSrc": "./pic_res/剧照/那年那兔那些事/那年那兔那些事1.jpg",
+						"link": "./pic_res/剧照/那年那兔那些事/那年那兔那些事1.jpg"
+				},
+				{
+						"id": 1,
+						"imgSrc": "./pic_res/剧照/那年那兔那些事/那年那兔那些事2.jpg",
+						"link": "./pic_res/剧照/那年那兔那些事/那年那兔那些事2.jpg"
+				},
+				{
+						"id": 2,
+						"imgSrc": "./pic_res/剧照/那年那兔那些事/那年那兔那些事3.jpg",
+						"link": "./pic_res/剧照/那年那兔那些事/那年那兔那些事3.jpg"
+				}
+		],
+		"commentArray": [
+				{
+					"id": 0,
+					"imgSrc": "./pic_res/profile_photo/头像-5.jpg",
+					"text":
+						"延续了第一部的风格，更可贵的是兔子还有了进步，他让我了解到了一段我不知道的历史！同样的它依旧很好看！",
+					"rate": 8
+				},
+				{
+					"id": 1,
+					"imgSrc": "./pic_res/profile_photo/头像-20.jpg",
+					"text":
+						"真的非常非常的感人！！！",
+					"rate": 9
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-21.jpg",
+					"text":
+						"被第一季虐的老泪纵横的我来追第二季了～咦？画风变得如此逗比中二是什么情况⊙??_⊙?? ╮(╯▽╰)╭依然好看就够了！",
+					"rate": 8
+				},
+				{
+					"id": 3,
+					"imgSrc": "./pic_res/profile_photo/头像-12.jpg",
+					"text":
+						"预测评分会两极分化，平衡一下。",
+					"rate": 9
+				}
+			],
+		"newsArray": [
+				{
+						"id": 0,
+						"linkText": "曾在2013年连续五月获得新浪微漫画激励计划一等奖，并获得第二届微漫画大赛一等奖",
+						"link": "https://www.baidu.com",
+						"text": "（获奖情况）"
+				},
+				{
+						"id": 1,
+						"linkText": "同志们，听我说，那兔动画要更新了！就在国庆",
+						"link": "https://baike.baidu.com/tashuo/browse/content?id=ed96b43e429ca97a3aecac9f&lemmaId=16854144&fromLemmaModule=pcBottom",
+						"text": "（TA说）"
+				},
+				{
+						"id": 2,
+						"linkText": "那年那兔那些事好看在哪里",
+						"link": "https://baijiahao.baidu.com/s?id=1592900673246720006&wfr=spider&for=pc",
+						"text": "(ACG）"
+				}
+		]
+}

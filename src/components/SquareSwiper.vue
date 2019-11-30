@@ -30,7 +30,10 @@ export default {
     return {
       swiperOption: {
         //loop: true,
-        mousewheel: true,
+        mousewheel: {
+          releaseOnEdges: true
+        },
+        keyboard : true,
         spaceBetween: 0,
         centeredSlides: true,
         centeredSlidesBounds: true,

@@ -1,0 +1,74 @@
+{
+		"introductionItem": {
+				"imgSrc": "./pic_res/art_works_list_img/镇魂街第一季.jpg",
+				"title": "镇魂街 第一季（2016）",
+				"director": "卢恒宇 Henry Lu,李姝洁 Jill Lee",
+				"date": "2016-04-28(中国大陆)",
+				"type": "剧情,动作,动画",
+				"rate": 8.7,
+				"detail": "普通的应届大学毕业生夏铃在求职之际，收到了一条奇怪的面试通知，因此误入罗刹街并遭到了危险，幸而被镇魂将曹焱兵搭救。然而接触中，曹焱兵却发现夏铃并非看起来那样普通，因为她的身体里也存在着灵力，并且寄宿着一位神秘的守护灵。与此同时，夏铃开始遭到不明身份刺客的追杀，曹焱兵亦被卷入其中，二人的命运从此开始了交集，而在这一切的背后，似乎还隐藏着某些更加危险的秘密……  "
+		},
+		"imgArray": [
+				{
+						"id": 0,
+						"imgSrc": "./pic_res/剧照/镇魂街第一季/zhj1.jpg",
+						"link": "./pic_res/剧照/镇魂街第一季/zhj1.jpg"
+				},
+				{
+						"id": 1,
+						"imgSrc": "./pic_res/剧照/镇魂街第一季/zhj2.jpg",
+						"link": "./pic_res/剧照/镇魂街第一季/zhj2.jpg"
+				},
+				{
+						"id": 2,
+						"imgSrc": "./pic_res/剧照/镇魂街第一季/zhj3.jpg",
+						"link": "./pic_res/剧照/镇魂街第一季/zhj3.jpg"
+				},
+				{
+						"id": 3,
+						"imgSrc": "./pic_res/剧照/镇魂街第一季/zhj4.jpg",
+						"link": "./pic_res/剧照/镇魂街第一季/zhj4.jpg"
+				},
+				{
+						"id": 4,
+						"imgSrc": "./pic_res/剧照/镇魂街第一季/zhj5.jpg",
+						"link": "./pic_res/剧照/镇魂街第一季/zhj5.jpg"
+				},
+				{
+						"id": 5,
+						"imgSrc": "./pic_res/剧照/镇魂街第一季/zhj6.jpg",
+						"link": "./pic_res/剧照/镇魂街第一季/zhj6.jpg"
+				}
+		],
+		"commentArray": [
+				{
+					"id": 0,
+					"imgSrc": "./pic_res/profile_photo/头像-11.jpg",
+					"text":
+						"每次想学习就能发现比学习有意思得多的事，这是我的超能力吗，好自为之吧 ",
+					"rate": 7
+				},
+				{
+					"id": 1,
+					"imgSrc": "./pic_res/profile_photo/头像-49.jpg",
+					"text":
+						"反正作为一个女生看了四集觉得燃点不少，有些台词虽然略点中二但还是很有气势的，BGM也给力，所以就显得燃。最燃的地方就是守护灵出现的时候，很期待那些守护灵武将。",
+					"rate": 8
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-47.jpg",
+					"text":
+						"年纪大了看不下这种正能量的东西了，人设幼稚，剧本平庸，台词尴尬，画风单调，价值观生硬，强行说教令人厌，灵异分分钟变迷信，死鬼分分钟就跳出，世界观又何在？",
+					"rate": 6
+				}
+			],
+		"newsArray": [
+				{
+						"id": 0,
+						"linkText": "守护灵实力排行榜，许褚不在前三",
+						"link": "https://baijiahao.baidu.com/s?id=1615907256491896143&wfr=spider&for=pc",
+						"text": "（元元说动漫）"
+				}
+		]
+}

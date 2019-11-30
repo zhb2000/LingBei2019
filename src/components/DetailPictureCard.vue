@@ -1,10 +1,12 @@
 <template>
   <div class="card">
     <float-tag class="float_tag">剧照</float-tag>
+    <div class="group_wrapper">
     <div class="image_group">
       <a target="_blank" v-for="item in imgArray" :key="item.id" :href="item.link">
         <img :src="item.imgSrc" class="image" />
       </a>
+    </div>
     </div>
   </div>
 </template>
@@ -38,13 +40,24 @@ export default {
   top: -15px;
   left: 20px;
 }
+.group_wrapper{
+  overflow: hidden;
+  height: 120px;
+}
 .image_group {
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  -ms-overflow-style: none;/**edge隐藏滚动条 */
+  height: calc(100% + 17px);
   width: 100%;
 }
+.image_group::-webkit-scrollbar{
+  display: none;
+}
 .image {
-  height: 120px;
+  height: 100%;
   margin-right: 10px;
   display: inline-block;
   border-radius: 3px;

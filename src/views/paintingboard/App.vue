@@ -2,7 +2,13 @@
   <div id="app">
     <div class="navbar_area">
       <my-navbar :selected="3" />
-      <painting-navbar title="无标题-我的作品" />
+      <painting-navbar
+        title="无标题-我的作品"
+        @require-score="showScoreHandle"
+        @undo="undoChildCanvas"
+        @restore="restoreChildCanvas"
+        @download="downloadChildCanvas"
+      />
     </div>
 
     <my-grid>
@@ -10,7 +16,15 @@
         <painting-pic :pic-src="picSrc" />
       </template>
       <template v-slot:board>
-        <draw-board :pen-width="widths[selectedPen]" :pen-color="colors[selectedColor]" :is-eraser="selectedPen===0" />
+        <draw-board
+          ref="childCanvas"
+          :pen-width="widths[selectedPen]"
+          :pen-color="colors[selectedColor]"
+          :is-eraser="selectedPen===0"
+          :show-score="showScore"
+          :score="score"
+          :score-comment="scoreComment"
+        />
       </template>
       <template v-slot:toolbar>
         <painting-toolbar
@@ -49,7 +63,10 @@ export default {
         "#f6e6cc",
         "#ebb344",
         "#cc4a2b"
-      ]
+      ],
+      showScore: false,
+      score: 0,
+      scoreComment: ""
     };
   },
   components: {
@@ -59,6 +76,30 @@ export default {
     "painting-pic": PaintingPicture,
     "painting-toolbar": PaintingToolbar,
     "painting-navbar": PaintingBoardNavbar
+  },
+  methods: {
+    showScoreHandle() {
+      //生成从minNum到maxNum的随机数
+      function randomNum(minNum, maxNum) {
+        return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
+      }
+
+      this.score = randomNum(50, 99);
+      this.scoreComment = "啦啦啦";
+      this.showScore = true;
+      setTimeout(() => {
+        this.showScore = false;
+      }, 3000);
+    },
+    undoChildCanvas() {
+      this.$refs.childCanvas.undo();
+    },
+    restoreChildCanvas() {
+      this.$refs.childCanvas.restore();
+    },
+    downloadChildCanvas() {
+      this.$refs.childCanvas.download();
+    }
   }
 };
 </script>
@@ -89,5 +130,6 @@ body {
   width: 100%;
   top: 0px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 </style>

@@ -6,7 +6,7 @@
     <square-swiper v-if="loadOK" :items="swiperItems" id="square_swiper" />
     <content-area v-if="loadOK" style="margin-top:0px; margin-bottom:30px;">
       <group-header link="#" tag-text="时下热门" link-text="更多文章>>" />
-      <card-group>
+      <card-group :is-right="false">
         <template #main-card>
           <pic-text-card v-if="bigCard.cardType===0" :item="bigCard" />
           <pic-text-card v-if="bigCard.cardType===1" :item="bigCard" />

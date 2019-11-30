@@ -1,0 +1,81 @@
+{
+		"introductionItem": {
+				"imgSrc": "./pic_res/art_works_list_img/全职高手第一季.jpg",
+				"title": "全职高手 第一季（2017）",
+				"director": "熊可 Ke Xiong",
+				"date": "2017-04-07(中国大陆)",
+				"type": "剧情,动画",
+				"rate": 8.7,
+				"detail": "网游荣耀中被誉为教科书级别的顶尖高手叶修，因为种种原因遭到俱乐部的驱逐，离开职业圈的他寄身于一家网吧成了一个小小的网管，但是，拥有十年游戏经验的他，在荣耀新开的第十区重新投入了游戏，带着对往昔的回忆，和一把未完成的自制武器，开始了重返巅峰之路。 "
+		},
+		"imgArray": [
+				{
+						"id": 0,
+						"imgSrc": "./pic_res/剧照/全职高手第一季/qz1.jpg",
+						"link": "./pic_res/剧照/全职高手第一季/qz1.jpg"
+				},
+				{
+						"id": 1,
+						"imgSrc": "./pic_res/剧照/全职高手第一季/qz2.jpg",
+						"link": "./pic_res/剧照/全职高手第一季/qz2.jpg"
+				},
+				{
+						"id": 2,
+						"imgSrc": "./pic_res/剧照/全职高手第一季/qz3.jpg",
+						"link": "./pic_res/剧照/全职高手第一季/qz3.jpg"
+				},
+				{
+						"id": 3,
+						"imgSrc": "./pic_res/剧照/全职高手第一季/qz4.jpg",
+						"link": "./pic_res/剧照/全职高手第一季/qz4.jpg"
+				},
+				{
+						"id": 4,
+						"imgSrc": "./pic_res/剧照/全职高手第一季/qz5.jpg",
+						"link": "./pic_res/剧照/全职高手第一季/qz5.jpg"
+				},
+				{
+						"id": 5,
+						"imgSrc": "./pic_res/剧照/全职高手第一季/qz6.jpg",
+						"link": "./pic_res/剧照/全职高手第一季/qz6.jpg"
+				}
+		],
+		"commentArray": [
+				{
+					"id": 0,
+					"imgSrc": "./pic_res/profile_photo/头像-16.jpg",
+					"text":
+						"有十星没有！我要打十星！！人物不崩作画精细并且完全还原原著，十足十的诚意。热评第一那位，字里行间的酸气都溢出屏幕了，活生生的一个屌丝的自我高潮实例，你可以去嘲讽一个观点甚至一群人的观点，可以去嘲讽一个喜好甚至一群人的喜好，但你无权嘲讽一种你不懂的情怀，这只会让你显得无比的low",
+					"rate": 10
+				},
+				{
+					"id": 1,
+					"imgSrc": "./pic_res/profile_photo/头像-51.jpg",
+					"text":
+						"刚看了一集，作为一个动漫圈外的人来看，感觉还不错，可以试着追下去",
+					"rate": 8
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-49.jpg",
+					"text":
+						"人物美型，剧情很燃，他们的名字就是一个盛世！荣耀！",
+					"rate": 8
+				},
+				{
+					"id": 3,
+					"imgSrc": "./pic_res/profile_photo/头像-42.jpg",
+					"text":
+						"整体质量已经超过普通tv很多倍了，比起魁拔这种剧场版还要好，视美真心了不得，比起作画，摄影和背景更加美不胜收！如果剧本可以多描写一些游戏之外的部分就好了，目前看了几集这些人每天全都是围绕游戏转，生活细节比较少",
+					"rate": 9
+				}
+			],
+		"newsArray": [
+				{
+						"id": 0,
+						"linkText": "《全职高手》第一季真的在国外很火吗",
+						"link": "https://baijiahao.baidu.com/s?id=1623262471037810758&wfr=spider&for=pc",
+						"text": "（L二次元云开）"
+				}
+		]
+}

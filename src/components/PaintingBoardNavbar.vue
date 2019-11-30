@@ -2,8 +2,8 @@
   <div class="navbar">
     <div>
       <img class="button_img left" :src="backSrc" />
-      <img class="button_img right" :src="undoSrc" style="transform:scaleX(-1)" />
-      <img class="button_img right" :src="undoSrc" />
+      <img class="button_img right" :src="undoSrc"  @click="$emit('restore')" style="transform:scaleX(-1)" />
+      <img class="button_img right" :src="undoSrc" @click="$emit('undo')" />
     </div>
     <div></div>
     <div class="center_area">
@@ -12,8 +12,8 @@
     </div>
     <div></div>
     <div>
-      <img class="button_img right" :src="saveSrc" />
-      <img class="button_img right" :src="shareSrc" />
+      <img class="button_img right" :src="saveSrc" @click="$emit('download')" />
+      <img class="button_img right" :src="shareSrc" @click="$emit('require-score')" />
     </div>
   </div>
 </template>
@@ -26,11 +26,11 @@ export default {
   },
   data: function() {
     return {
-      backSrc: "pic_res/painting_toolbar/button/back.svg",
-      undoSrc: "pic_res/painting_toolbar/button/undo.svg",
-      editSrc: "pic_res/painting_toolbar/button/edit.svg",
-      saveSrc: "pic_res/painting_toolbar/button/save.svg",
-      shareSrc: "pic_res/painting_toolbar/button/share.svg"
+      backSrc: "./pic_res/painting_toolbar/button/back.svg",
+      undoSrc: "./pic_res/painting_toolbar/button/undo.svg",
+      editSrc: "./pic_res/painting_toolbar/button/edit.svg",
+      saveSrc: "./pic_res/painting_toolbar/button/save.svg",
+      shareSrc: "./pic_res/painting_toolbar/button/share.svg"
     };
   }
 };

@@ -1,6 +1,15 @@
 <template>
   <div class="painting_board" ref="outer" id="outer">
+    <transition name="fade">
+      <div class="score_mask" v-show="showScore">
+        <div class="score_box">
+          <div class="score_text">您的得分:{{" "+score}}</div>
+          <div class="comment_text">{{scoreComment}}</div>
+        </div>
+      </div>
+    </transition>
     <canvas id="canvas" ref="canvas" class="draw_canvas"></canvas>
+    <a href="javascript:void(0);" ref="download" download="picture.png" v-show="false"></a>
   </div>
 </template>
 
@@ -19,6 +28,18 @@ export default {
     isEraser: {
       type: Boolean,
       default: false
+    },
+    showScore: {
+      type: Boolean,
+      default: true
+    },
+    score: {
+      type: Number,
+      default: 50
+    },
+    scoreComment: {
+      type: String,
+      default: "lalala"
     }
   },
   data() {
@@ -27,7 +48,10 @@ export default {
       context: null,
       isPainting: false,
       lastX: 0,
-      lastY: 0
+      lastY: 0,
+      historyList: [],
+      nowIndex: -1,
+      maxIndex: -1
     };
   },
   mounted() {
@@ -38,6 +62,9 @@ export default {
       this.canvas.style.height = "100%";
       this.canvas.width = this.canvas.offsetWidth;
       this.canvas.height = this.canvas.offsetHeight;
+
+      this.context.fillStyle = "#ffffff";
+      this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
     }, 800);
 
     var that = this;
@@ -92,7 +119,13 @@ export default {
     }
     /**pointer松开 */
     function pointerUpHandle() {
-      that.isPainting = false;
+      if (that.isPainting) {
+        that.isPainting = false;
+        var dataUrl = that.canvas.toDataURL();
+        that.nowIndex++;
+        that.historyList[that.nowIndex] = dataUrl;
+        that.maxIndex = that.nowIndex;
+      }
     }
 
     this.canvas.onpointerdown = pointerDownHandle;
@@ -103,6 +136,56 @@ export default {
     getCanvas() {
       this.canvas = this.$refs.canvas;
       this.context = this.canvas.getContext("2d");
+    },
+    undo() {
+      if (this.nowIndex >= 0) {
+        this.nowIndex--;
+        var image = new Image();
+        image.src = this.historyList[this.nowIndex];
+        var width = this.canvas.width;
+        var height = this.canvas.height;
+        this.context.clearRect(0, 0, width, height);
+        image.onload = () => {
+          this.context.drawImage(
+            image,
+            0,
+            0,
+            image.width,
+            image.height,
+            0,
+            0,
+            width,
+            height
+          );
+        };
+      }
+    },
+    restore() {
+      if (this.nowIndex < this.maxIndex) {
+        this.nowIndex++;
+        var image = new Image();
+        image.src = this.historyList[this.nowIndex];
+        var width = this.canvas.width;
+        var height = this.canvas.height;
+        this.context.clearRect(0, 0, width, height);
+        image.onload = () => {
+          this.context.drawImage(
+            image,
+            0,
+            0,
+            image.width,
+            image.height,
+            0,
+            0,
+            width,
+            height
+          );
+        };
+      }
+    },
+    download() {
+      this.$refs.download.href = this.canvas.toDataURL("image/png");
+      this.$refs.download.click();
     }
   }
 };
@@ -114,10 +197,39 @@ export default {
   background-color: white;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  position: relative;
 }
 .draw_canvas {
-  /* transition: opacity 0.3s; */
   background-color: white;
   touch-action: none;
+}
+.score_mask {
+  background-color: rgba(0, 0, 0, 0.384);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.score_box {
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+  color: white;
+  /* background-color: bisque; */
+  text-align: center;
+}
+.score_text {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+.comment_text {
+  font-size: 40px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
