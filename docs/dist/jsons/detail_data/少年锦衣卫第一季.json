@@ -1,0 +1,80 @@
+{
+		"introductionItem": {
+				"imgSrc": "./pic_res/art_works_list_img/少年锦衣卫第一季.jpg",
+				"title": "少年锦衣卫（2017）",
+				"director": "陈柏言 BoYan Chen",
+				"date": "2017-02-09(中国大陆)",
+				"type": "动画,武侠",
+				"rate": 8.2,
+				"detail": "大明初起，明太祖朱元璋设锦衣卫亲军指挥使司，后分设南北镇抚司，稽查百官，权势煊赫。锦衣卫沿袭百年，南北镇抚司势如水火，相争不下。朝堂党争激烈，江湖盗匪猖獗，盛世繁华之下，却隐藏着汹涌暗流……"
+		},
+		"imgArray": [
+				{
+						"id": 0,
+						"imgSrc": "./pic_res/剧照/少年锦衣卫第一季/snjyw1.jpg",
+						"link": "./pic_res/剧照/少年锦衣卫第一季/snjyw1.jpg"
+				},
+				{
+						"id": 1,
+						"imgSrc": "./pic_res/剧照/少年锦衣卫第一季/snjyw2.jpg",
+						"link": "./pic_res/剧照/少年锦衣卫第一季/snjyw2.jpg"
+				},
+				{
+						"id": 2,
+						"imgSrc": "./pic_res/剧照/少年锦衣卫第一季/snjyw3.jpg",
+						"link": "./pic_res/剧照/少年锦衣卫第一季/snjyw3.jpg"
+				},
+				{
+						"id": 3,
+						"imgSrc": "./pic_res/剧照/少年锦衣卫第一季/snjyw4.jpg",
+						"link": "./pic_res/剧照/少年锦衣卫第一季/snjyw4.jpg"
+				},
+				{
+						"id": 4,
+						"imgSrc": "./pic_res/剧照/少年锦衣卫第一季/snjyw5.jpg",
+						"link": "./pic_res/剧照/少年锦衣卫第一季/snjyw5.jpg"
+				},
+				{
+						"id": 5,
+						"imgSrc": "./pic_res/剧照/少年锦衣卫第一季/snjyw6.jpg",
+						"link": "./pic_res/剧照/少年锦衣卫第一季/snjyw6.jpg"
+				}
+		],
+		"commentArray": [
+				{
+					"id": 0,
+					"imgSrc": "./pic_res/profile_photo/头像-19.jpg",
+					"text":
+						"人物设计和画面还有配音的确是没话说，但是动作有点奇怪，加上美颜盛世，像是看国产小鲜肉演戏。",
+					"rate": 7
+				},
+				{
+					"id": 1,
+					"imgSrc": "./pic_res/profile_photo/头像-53.jpg",
+					"text":
+						"视觉盛宴，期待主线的发展",
+					"rate": 8
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-43.jpg",
+					"text":
+						"这是一部动画片，但是却没有好好做动画，反倒渲染和配音不错。而且剧情和动画都太刻意了，太刻意了。",
+					"rate": 7
+				}
+			],
+		"newsArray": [
+				{
+						"id": 0,
+						"linkText": "国漫真崛起了!这部良心剧8.3分我嫌太低",
+						"link": "https://baike.baidu.com/tashuo/browse/content?id=6774351af15c52499b33569d&fr=qingtian&lemmaId=20104485",
+						"text": "（TA说）"
+				},
+				{
+						"id": 1,
+						"linkText": "盘点武侠动画之少年锦衣卫 第一季，网友：国产动画一大飞跃",
+						"link": "https://baijiahao.baidu.com/s?id=1594084487652169909&wfr=spider&for=pc",
+						"text": "（最新娱乐我先知）"
+				}
+		]
+}

@@ -45,7 +45,7 @@ module.exports = {
       entry: 'src/views/home/main.js',
       template: 'src/views/home/index.html',
       filename: 'home.html',
-      title: '首页',
+      title: 'M++ 首页',
       chunks: ['chunk-vendors', 'chunk-common', 'home']
     },
     //登录 页面

@@ -1,0 +1,93 @@
+{
+		"introductionItem": {
+				"imgSrc": "./pic_res/art_works_list_img/伍六七之最强发型师.jpg",
+				"title": "伍六七之最强发型师（2019）",
+				"director": "何小疯 Xiaofeng He",
+				"date": "2019-10-23(中国大陆)",
+				"type": "动画",
+				"rate": 8.8,
+				"detail": "全片以主人公伍六七寻找失去的记忆为故事主线，配合角色与角色之间的爱恨情仇组成的支线贯穿始终。通过讲述主人公在帮助别人和寻找自我的过程中，认识不同的人，与不同角色之间发生的有趣的，最终用爱化解仇恨与偏见的故事，想带给观众欢乐的同时表达对生活的热爱，爱与包容可以化解一切。 "
+		},
+		"imgArray": [
+				{
+						"id": 0,
+						"imgSrc": "./pic_res/剧照/伍六七之最强发型师/wlqz1.jpg",
+						"link": "./pic_res/剧照/魔道祖师/魔道祖师1.jpg"
+				},
+				{
+						"id": 1,
+						"imgSrc": "./pic_res/剧照/伍六七之最强发型师/wlqz2.jpg",
+						"link": "./pic_res/剧照/伍六七之最强发型师/wlqz2.jpg"
+				},
+				{
+						"id": 2,
+						"imgSrc": "./pic_res/剧照/伍六七之最强发型师/wlqz3.jpg",
+						"link": "./pic_res/剧照/伍六七之最强发型师/wlqz3.jpg"
+				},
+				{
+						"id": 3,
+						"imgSrc": "./pic_res/剧照/伍六七之最强发型师/wlqz4.jpg",
+						"link": "./pic_res/剧照/伍六七之最强发型师/wlqz4.jpg"
+				},
+				{
+						"id": 4,
+						"imgSrc": "./pic_res/剧照/伍六七之最强发型师/wlqz5.jpg",
+						"link": "./pic_res/剧照/伍六七之最强发型师/wlqz5.jpg"
+				},
+				{
+						"id": 5,
+						"imgSrc": "./pic_res/剧照/伍六七之最强发型师/wlqz6.jpg",
+						"link": "./pic_res/剧照/伍六七之最强发型师/wlqz6.jpg"
+				}
+		],
+		"commentArray": [
+				{
+					"id": 0,
+					"imgSrc": "./pic_res/profile_photo/头像-10.jpg",
+					"text":
+						"继承了上一季的搞笑和无厘头，希望能维持下去，先给四星把把关！我超爱梅花十三！护柒狂魔！第三集有第一季内味了，BGM有丶好听到犯规！",
+					"rate": 9
+				},
+				{
+					"id": 1,
+					"imgSrc": "./pic_res/profile_photo/头像-44.jpg",
+					"text":
+						"第二季的节奏明显加快，看来10集的确太难支撑起这么大的故事格局，所以为什么要十集啊！！！",
+					"rate": 8
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-47.jpg",
+					"text":
+						"让哥告诉你这个画风神在哪里？这个动画明显跟一般的日系美系动画不太一样，是一种之前没有出现过的画风。有些帧单独来看很丑，但是结合剧情来看，就有趣味并且能看下去了。真厉害。感觉第二季“柔光”效果比第一季多很多，刺杀，却并不阴暗",
+					"rate": 9
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-1.jpg",
+					"text":
+						"片尾曲的动画，仍然是治愈系画风，不知道大家发现没有，片尾曲叫“我想跟你一起去海边”，结合第二集与梅花十三的打赌，莫非这是“爱情动作片”，惊了",
+					"rate": 9
+				}
+			],
+		"newsArray": [
+				{
+						"id": 0,
+						"linkText": "第二次被这9.8分的国漫燃到",
+						"link": "https://baike.baidu.com/tashuo/browse/content?id=c879ed0e4c6860147e34094d&lemmaId=23809215&fromLemmaModule=pcBottom",
+						"text": "（TA说 独立鱼电影）"
+				},
+				{
+						"id": 1,
+						"linkText": "等了18个月，“国漫届周星驰”终于推出第二季，光塑料港普就想笑",
+						"link": "https://baike.baidu.com/tashuo/browse/content?id=02c9b573953099dc831a9947&lemmaId=23809215&fromLemmaModule=pcBottom",
+						"text": "（TA说）"
+				},
+				{
+						"id": 2,
+						"linkText": "伍六七之最强发型师：冷血刺客十三化身护夫狂魔，爱上阿七不自知",
+						"link": "http://baijiahao.baidu.com/s?id=1650274636988522961&wfr=spider&for=pc",
+						"text": "（海学家）"
+				}
+		]
+}

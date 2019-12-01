@@ -6,12 +6,23 @@
     <square-swiper v-if="loadOK" :items="swiperItems" id="square_swiper" />
     <content-area v-if="loadOK" style="margin-top:0px; margin-bottom:30px;">
       <group-header link="#" tag-text="时下热门" link-text="更多文章>>" />
-      <card-group :is-right="false">
+      <card-group :is-right="false" style="margin-bottom:30px">
         <template #main-card>
           <pic-text-card v-if="bigCard.cardType===0" :item="bigCard" />
           <pic-text-card v-if="bigCard.cardType===1" :item="bigCard" />
         </template>
         <div v-for="card in cards" :key="card.id">
+          <pic-text-card v-if="card.cardType===0" :item="card" />
+          <text-card v-if="card.cardType===1" :item="card" />
+        </div>
+      </card-group>
+      <group-header link="#" tag-text="动漫新观察" link-text="更多文章>>" />
+      <card-group :is-right="true">
+        <template #main-card>
+          <pic-text-card v-if="bigCard2.cardType===0" :item="bigCard2" />
+          <pic-text-card v-if="bigCard2.cardType===1" :item="bigCard2" />
+        </template>
+        <div v-for="card in cards2" :key="card.id">
           <pic-text-card v-if="card.cardType===0" :item="card" />
           <text-card v-if="card.cardType===1" :item="card" />
         </div>
@@ -49,6 +60,8 @@ export default {
         this.swiperItems = response.data.swiperItems;
         this.bigCard = response.data.bigCard;
         this.cards = response.data.cards;
+        this.bigCard2 = response.data.bigCard2;
+        this.cards2 = response.data.cards2;
         this.loadOK = true;
       })
       .catch(error => alert(error));
@@ -58,6 +71,8 @@ export default {
       loadOK: false,
       bigCard: null,
       cards: [],
+      bigCard2: null,
+      cards2: null,
       swiperItems: []
     };
   }

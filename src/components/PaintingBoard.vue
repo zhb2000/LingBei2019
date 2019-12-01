@@ -63,7 +63,7 @@ export default {
       this.canvas.width = this.canvas.offsetWidth;
       this.canvas.height = this.canvas.offsetHeight;
 
-      this.context.fillStyle = "#ffffff";
+      this.context.fillStyle = "#fff";
       this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
     }, 800);
 

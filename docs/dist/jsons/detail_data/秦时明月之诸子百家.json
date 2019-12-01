@@ -1,0 +1,80 @@
+{
+		"introductionItem": {
+				"imgSrc": "./pic_res/art_works_list_img/秦时明月之诸子百家.jpg",
+				"title": "秦时明月之诸子百家（2010）",
+				"director": "沈乐平 Leping Shen",
+				"date": "2010-05-11(中国大陆)",
+				"type": "剧情,动画,历史,战争",
+				"rate": 9.3,
+				"detail": "故事发生在二千多年前的战国时期，秦始皇统一六国损兵达百万计，项燕兵败阵亡，少羽被困，高渐离、雪女、大铁锤赶来相救。兵败后，盖聂、墨家、项氏一族踏上逃亡之路。李斯进入儒家后，拜访先师荀子，荀子避而不见。同入儒家的少羽尊从法理少年老成，端木蓉由于被白凤所伤终日不醒，张良授计让天明与其对弈救木蓉。星魂对清秀的月儿产生浓厚兴趣反遭冷眼警告，月神把月儿带到东皇太一面前，东皇向她公布了自已的真实身世。少羽与天明观海时得知秦始皇要登临东海尽头的那座城市，暮色归途中又遇见流泪的石兰，交谈中少羽知道杀父仇人蒙恬来了，他该怎么办……"
+		},
+		"imgArray": [
+				{
+						"id": 0,
+						"imgSrc": "./pic_res/剧照/秦时明月之诸子百家/qinshi1.jpg",
+						"link": "./pic_res/剧照/秦时明月之诸子百家/qinshi1.jpg"
+				},
+				{
+						"id": 1,
+						"imgSrc": "./pic_res/剧照/秦时明月之诸子百家/qinshi2.jpg",
+						"link": "./pic_res/剧照/秦时明月之诸子百家/qinshi2.jpg"
+				},
+				{
+						"id": 2,
+						"imgSrc": "./pic_res/剧照/秦时明月之诸子百家/qinshi3.jpg",
+						"link": "./pic_res/剧照/秦时明月之诸子百家/qinshi3.jpg"
+				},
+				{
+						"id": 3,
+						"imgSrc": "./pic_res/剧照/秦时明月之诸子百家/qinshi4.jpg",
+						"link": "./pic_res/剧照/秦时明月之诸子百家/qinshi4.jpg"
+				},
+				{
+						"id": 4,
+						"imgSrc": "./pic_res/剧照/秦时明月之诸子百家/qinshi5.jpg",
+						"link": "./pic_res/剧照/秦时明月之诸子百家/qinshi5.jpg"
+				},
+				{
+						"id": 5,
+						"imgSrc": "./pic_res/剧照/秦时明月之诸子百家/qinshi6.jpg",
+						"link": "./pic_res/剧照/秦时明月之诸子百家/qinshi6.jpg"
+				}
+		],
+		"commentArray": [
+				{
+					"id": 0,
+					"imgSrc": "./pic_res/profile_photo/头像-10.jpg",
+					"text":
+						"没有比秦时明月还让人振奋的国产动漫了",
+					"rate": 10
+				},
+				{
+					"id": 1,
+					"imgSrc": "./pic_res/profile_photo/头像-20.jpg",
+					"text":
+						"能把34集缩减到24集 就好了 一路快进 公孙玲珑大妈一个人hold住全场",
+					"rate": 8
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-2.jpg",
+					"text":
+						"相比头两部，第三部显然给人更多的感动，人物造型比之前用心不少，典故典籍的运用也有了相当的进步，打斗的情节自然不用多言，尤其是歌舞和辩术的桥段堪称经典。悬念设置、各种倒叙插叙运用娴熟，相信制作团队已经有了更多的心得。各种武器地方名字的称呼，都很好地融入了中国文化，期待万里长城。",
+					"rate": 8
+				}
+			],
+		"newsArray": [
+				{
+						"id": 0,
+						"linkText": "《秦时明月》最看不懂的系列帝子降兮，你看懂了吗？",
+						"link": "https://new.qq.com/omn/20191124/20191124A0FWKT00.html",
+						"text": "（腾讯网）"
+				},
+				{
+						"id": 1,
+						"linkText": "秦时明月：你印象最深的一句台词是哪句？最后一句看到都笑了",
+						"link": "https://new.qq.com/omn/20191126/20191126A0JCNV00.html",
+						"text": "（腾讯网）"
+				}
+		]
+}

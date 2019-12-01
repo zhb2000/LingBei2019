@@ -1,0 +1,74 @@
+{
+		"introductionItem": {
+				"imgSrc": "./pic_res/art_works_list_img/少年歌行.jpg",
+				"title": "少年歌行（2018）",
+				"director": "陈升垚",
+				"date": "2018-12-26(中国大陆)",
+				"type": "动画,奇幻,古装",
+				"rate": 8.6,
+				"detail": "寒水寺忘忧大师坐化后，一口神秘的黄金棺材入世，掀起江湖纷争。各方势力针锋相对，雷无桀、萧瑟、唐莲、司空千落、天女蕊等相继卷入争端，一场围绕黄金棺材的故事即将上演。 策马江湖梦，倚剑踏歌行。 黄金棺材的秘密，逐渐浮现…… "
+		},
+		"imgArray": [
+				{
+						"id": 0,
+						"imgSrc": "./pic_res/剧照/少年歌行/sngx1.jpg",
+						"link": "./pic_res/剧照/少年歌行/sngx1.jpg"
+				},
+				{
+						"id": 1,
+						"imgSrc": "./pic_res/剧照/少年歌行/sngx2.jpg",
+						"link": "./pic_res/剧照/少年歌行/sngx2.jpg"
+				},
+				{
+						"id": 2,
+						"imgSrc": "./pic_res/剧照/少年歌行/sngx3.jpg",
+						"link": "./pic_res/剧照/少年歌行/sngx3.jpg"
+				},
+				{
+						"id": 3,
+						"imgSrc": "./pic_res/剧照/少年歌行/sngx4.jpg",
+						"link": "./pic_res/剧照/少年歌行/sngx4.jpg"
+				},
+				{
+						"id": 4,
+						"imgSrc": "./pic_res/剧照/少年歌行/sngx5.jpg",
+						"link": "./pic_res/剧照/少年歌行/sngx5.jpg"
+				},
+				{
+						"id": 5,
+						"imgSrc": "./pic_res/剧照/少年歌行/sngx6.jpg",
+						"link": "./pic_res/剧照/少年歌行/sngx6.jpg"
+				}
+		],
+		"commentArray": [
+				{
+					"id": 0,
+					"imgSrc": "./pic_res/profile_photo/头像-33.jpg",
+					"text":
+						"季节不分番，裘皮大衣和薄纱短袖共存的世界观，剧情看着也平平无奇，背景模糊缺乏武侠韵味，对女性角色的直男审美和对男性角色的欧美捏模都是3D的通病了",
+					"rate": 6
+				},
+				{
+					"id": 1,
+					"imgSrc": "./pic_res/profile_photo/头像-36.jpg",
+					"text":
+						"自从少年锦衣卫之后，好一阵子没看国漫了，现在突然看到这个，画面精良，人物美型，打斗也不敷衍，剧情有小说作依托也比较有保障，就是节奏有点慢，大力日天的戏份实在忒多了点。",
+					"rate": 8
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-32.jpg",
+					"text":
+						"整体画风非常好，动作也比较流畅，场景丰富，但可能因为是和游戏一起发行的关系，人物设计过于游戏化，尤其是女性，穿得比较少，不过不影响整个故事的走向，狗的情节有点多余，可以不用拿这个来凑剧情，尤其那狗有点丑。",
+					"rate": 7
+				}
+			],
+		"newsArray": [
+				{
+						"id": 0,
+						"linkText": "这部迄今为止颜值最高的3D武侠动画，了解一下",
+						"link": "https://baike.baidu.com/tashuo/browse/content?id=0c49bf38f89a431ceb2044e1&lemmaId=22371759&fromLemmaModule=pcBottom",
+						"text": "（TA说）"
+				}
+		]
+}

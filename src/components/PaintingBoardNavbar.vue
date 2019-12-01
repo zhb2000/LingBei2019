@@ -30,7 +30,7 @@ export default {
       undoSrc: "./pic_res/painting_toolbar/button/undo.svg",
       editSrc: "./pic_res/painting_toolbar/button/edit.svg",
       saveSrc: "./pic_res/painting_toolbar/button/save.svg",
-      shareSrc: "./pic_res/painting_toolbar/button/share.svg"
+      shareSrc: "./pic_res/painting_toolbar/button/提交.png"
     };
   }
 };

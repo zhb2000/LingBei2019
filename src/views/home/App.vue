@@ -53,7 +53,7 @@ export default {
         centeredSlides: true,
         centeredSlidesBounds: true,
         speed: 600,
-        keyboard: true
+        keyboard: true,
       }
     };
   },

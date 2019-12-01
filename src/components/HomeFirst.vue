@@ -9,7 +9,7 @@
           <p>
             截至2019年8月8日,《哪吒之魔童降世》上映两周累计票房突破30亿,荣登中国电影票房排行榜第8位。从前几年以“黑马”之姿出现的《大圣归来》《大鱼·海棠》,到《大护法》《白蛇·缘起》《哪吒之魔童降世》“爆红”,这些优质动画电影让“国漫崛起”成为热议话题
             <a
-              href="https://www.baidu.com"
+              href="./worklist.html"
             >了解更多>></a>
           </p>
         </div>
@@ -45,8 +45,10 @@ export default {
 }
 .down_img {
   position: absolute;
-  bottom: -50px;
-  width: 100%;
+  bottom: -100px;
+  width: 120%;
+  left: -10%;
+  right: -10%;
   z-index: 15;
   animation: change_opacity 1.5s;
   animation-delay: 0.5s;

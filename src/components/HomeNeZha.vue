@@ -10,7 +10,7 @@
           <p>“我命由我不由天！是魔是仙，我自己决定！”</p>
           <p class="grey_text">
             2019年07月26日上映
-            <a href="https://www.baidu.com">了解更多>></a>
+            <a href="./detail.html#/?name=哪吒之魔童降世">了解更多>></a>
           </p>
         </div>
       </div>

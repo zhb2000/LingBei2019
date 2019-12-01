@@ -84,8 +84,24 @@ export default {
         return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
       }
 
-      this.score = randomNum(50, 99);
-      this.scoreComment = "啦啦啦";
+      this.score = randomNum(5, 99);
+      if (this.score >= 90) {
+        this.scoreComment = "你就是达芬奇转世？";
+      } else if (this.score >= 70) {
+        this.scoreComment = "诶哟不错哦";
+      } else if (this.score >= 50) {
+        this.scoreComment = "勉强能看出来画的是啥";
+      } else if (this.score >= 40) {
+        this.scoreComment = "毕...毕加索？";
+      } else if (this.score >= 30) {
+        this.scoreComment = "你的画工要加强啦！";
+      } else if (this.score >= 20) {
+        this.scoreComment = "有点抽象噢";
+      } else if (this.score >= 10) {
+        this.scoreComment = "emmmmm...";
+      } else {
+        this.scoreComment = "这是用脚画的吧";
+      }
       this.showScore = true;
       setTimeout(() => {
         this.showScore = false;

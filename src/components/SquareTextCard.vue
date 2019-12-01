@@ -1,6 +1,6 @@
 <template>
   <div class="outer">
-    <a class="inner" :href="item.link">
+    <a class="inner" :href="item.link" target="_blank">
       <div class="card_content">
         <div></div>
         <div class="wrap_area">
@@ -87,7 +87,7 @@ export default {
 }
 .comment {
   width: 100%;
-  color: #44546A;
+  color: #44546a;
   word-wrap: break-word;
   font-size: 15px;
 }
@@ -105,7 +105,7 @@ export default {
   border-radius: 50%;
 }
 .user_note {
-  color: #44546A;
+  color: #44546a;
   width: 100%;
   overflow: hidden;
   word-wrap: break-word;

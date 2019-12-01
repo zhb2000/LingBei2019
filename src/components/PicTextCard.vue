@@ -1,6 +1,6 @@
 <template>
   <div class="outer">
-    <a class="inner" :href="item.link">
+    <a class="inner" :href="item.link" target="_blank">
       <div class="card_content">
         <div class="pic_area">
           <img :src="item.imgLink" class="card_pic" />

@@ -1,0 +1,92 @@
+{
+		"introductionItem": {
+				"imgSrc": "./pic_res/art_works_list_img/刺客伍六七.jpg",
+				"title": "刺客伍六七 第一季（2018）",
+				"director": "何小疯 Xiaofeng He",
+				"date": "2018-04-25(中国大陆)",
+				"type": "剧情,喜剧,动作,动画",
+				"rate": 8.9,
+				"detail": "在某个小岛上，有一个可以伪装成任何东西的廉价刺客，名叫伍六七。伍六七平时看上去是个理发师，其实背地里却做着刺客生意。由于初入刺客行当，行情十分廉价，因此接到的都是些奇葩的刺杀任务。在完成刺杀任务的过程中，他常与刺杀对象发生一系列有趣的意外事件，每次任务都被搞得乱七八糟。 伍六七其实是他的经纪人鸡大保从海边“捡”回来的，当时他重伤昏迷失去了记忆，没有人知道他的过去。鸡大保根据理发店门牌号给他取了个名字——伍六七，同时作为他的经纪人，以理发店为据点，替伍六七承接各种奇葩的刺杀任务。然而，由于从来没有成功刺杀过一个人，他的行情低落，只能混迹于刺客行业的底层，生活穷困潦倒……"
+		},
+		"imgArray": [
+				{
+						"id": 0,
+						"imgSrc": "./pic_res/剧照/刺客伍六七/wlq1.jpg",
+						"link": "./pic_res/剧照/刺客伍六七/wlq1.jpg"
+				},
+				{
+						"id": 1,
+						"imgSrc": "./pic_res/剧照/刺客伍六七/wlq2.jpg",
+						"link": "./pic_res/剧照/刺客伍六七/wlq2.jpg"
+				},
+				{
+						"id": 2,
+						"imgSrc": "./pic_res/剧照/刺客伍六七/wlq3.jpg",
+						"link": "./pic_res/剧照/刺客伍六七/wlq3.jpg"
+				},
+				{
+						"id": 3,
+						"imgSrc": "./pic_res/剧照/刺客伍六七/wlq4.jpg",
+						"link": "./pic_res/剧照/刺客伍六七/wlq4.jpg"
+				},
+				{
+						"id": 4,
+						"imgSrc": "./pic_res/剧照/刺客伍六七/wlq5.jpg",
+						"link": "./pic_res/剧照/刺客伍六七/wlq5.jpg"
+				},
+				{
+						"id": 5,
+						"imgSrc": "./pic_res/剧照/刺客伍六七/wlq6.jpg",
+						"link": "./pic_res/剧照/刺客伍六七/wlq6.jpg"
+				}
+		],
+		"commentArray": [
+				{
+					"id": 0,
+					"imgSrc": "./pic_res/profile_photo/头像-34.jpg",
+					"text":
+						"这么好搭建的热血向构架硬加恶搞吐槽，目测背景会很大，加上有点音乐治愈向三星给你加一星。求求国漫别加一些吐槽恶搞的台词了，真的一点都不好笑，真的超级尬。（九集前铺垫很多但是略显昂长快进着看，九集之后燃到爆，有星游记第一季越看越好看的感觉。）给四星是因为有很大的进步空间，希望越来越好，燃到底吧！",
+					"rate": 8
+				},
+				{
+					"id": 1,
+					"imgSrc": "./pic_res/profile_photo/头像-50.jpg",
+					"text":
+						"特别走心，画风喜欢！！！看N遍也还是觉得很赞！伍六七，绝对是牛逼国漫！",
+					"rate": 9
+				},
+				{
+					"id": 2,
+					"imgSrc": "./pic_res/profile_photo/头像-40.jpg",
+					"text":
+						"又贱又好看，别的不错，配音负分～??",
+					"rate": 8
+				}
+			],
+		"newsArray": [
+				{
+						"id": 0,
+						"linkText": "法国昂西国际动画电影节主竞赛单元系列动画入围；白玉兰奖最佳动画片提名；白玉兰奖最佳动画剧本提名",
+						"link": "https://movie.douban.com/subject/27624762/",
+						"text": "（获奖）"
+				},
+				{
+						"id": 1,
+						"linkText": "《评分9.8！这部动漫被称为是二次元版的国产凌凌漆",
+						"link": "https://baike.baidu.com/tashuo/browse/content?id=d4c4e5133d5dd137e28f6be4&lemmaId=22328738&fromLemmaModule=pcBottom",
+						"text": "（TA说）"
+				},
+				{
+						"id": 2,
+						"linkText": "史上最不像刺客的“刺客”——2018年碾压级国漫",
+						"link": "https://baike.baidu.com/tashuo/browse/content?id=702600887fb07903991d3a80&lemmaId=22328738&fromLemmaModule=pcBottom",
+						"text": "（TA说）"
+				},
+				{
+						"id": 3,
+						"linkText": "刺客伍六七：第二季下篇，阿七恢复记忆，鸡大保有救了！",
+						"link": "https://baijiahao.baidu.com/s?id=1591535071690403677&wfr=spider&for=pc",
+						"text": "（搜狐 半世浮生若梦）"
+				}
+		]
+}
