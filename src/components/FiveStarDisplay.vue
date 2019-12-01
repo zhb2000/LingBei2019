@@ -1,5 +1,5 @@
 <template>
-  <div class="star_grid">
+  <div class="star_grid" :class="{space_col:hasSpace}" >
     <img v-for="i in rangeArray" :key="i" :src="starSrc(i)" class="star_img" />
   </div>
 </template>
@@ -8,7 +8,11 @@
 export default {
   name: "FiveStarDisplay",
   props: {
-    rate: Number
+    rate: Number,
+    hasSpace:{
+      type:Boolean,
+      default:false
+    }
   },
   data: function() {
     return {
@@ -35,6 +39,10 @@ export default {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
+}
+.space_col{
+  column-gap: 5px;
+  grid-column-gap: 5px;
 }
 .star_img {
   width: 100%;

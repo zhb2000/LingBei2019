@@ -6,10 +6,19 @@
       </div>
       <div class="text_area">
         <div class="brief">
-          <p class="title">{{item.title}}</p>
-          <p class="info">导演：{{item.director}}</p>
-          <p class="info">上映日期：{{item.date}}</p>
-          <p class="info">类型：{{item.type}}</p>
+          <div class="left_brief">
+            <p class="title">{{item.title}}</p>
+            <p class="info">导演：{{item.director}}</p>
+            <p class="info">上映日期：{{item.date}}</p>
+            <p class="info">类型：{{item.type}}</p>
+          </div>
+          <div class="right_brief">
+            <div class="rate_box">
+              <span>评分</span>
+              <span class="rate_number">{{" "+item.rate}}</span>
+              <five-star class="rate_star" :rate="item.rate" :has-space="true" />
+            </div>
+          </div>
         </div>
         <div class="grey_card">
           <div class="text_wrapper">
@@ -24,6 +33,7 @@
 
 <script>
 import PinkFloatTag from "@/components/PinkFloatTag.vue";
+import FiveStarDisplay from "@/components/FiveStarDisplay.vue";
 
 export default {
   name: "DetailIntroduction",
@@ -32,7 +42,8 @@ export default {
     item: Object
   },
   components: {
-    "float-tag": PinkFloatTag
+    "float-tag": PinkFloatTag,
+    "five-star": FiveStarDisplay
   }
 };
 </script>
@@ -73,11 +84,31 @@ export default {
 }
 .brief {
   margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 100px;
 }
-.brief > p {
+.left_brief > p {
   margin: 8px 0;
   word-wrap: break-word;
   overflow: hidden;
+}
+.right_brief {
+  /* background-color: bisque; */
+  padding: 0 5px 10px 5px;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: end;
+}
+.rate_box {
+  text-align: center;
+  display: inline-block;
+}
+.rate_number {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.rate_star{
+  margin-top: 10px;
 }
 .title {
   font-size: 26px;
