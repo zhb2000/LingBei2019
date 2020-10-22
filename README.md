@@ -1,7 +1,7 @@
 # 队名：四面楚鸽
 没怎么搞过前端，现学现卖之作，各位大佬轻喷 0u0
 ## 观看网页
-1. 邹老板的腾讯云小水管：[**传送门1**](http://122.51.164.145/)
+1. 邹老板的腾讯云小水管：[~~传送门1（链接已失效）~~](http://122.51.164.145/)
 2. Github Page：[**传送门2**](https://zhb2000.github.io/LingBei2019/)
 
 ### 温馨提示
@@ -16,7 +16,7 @@
 - ![zlw](./docs/zlw.jpg) [邹龙威（后端）](https://github.com/Photooon)
 ### 设计组
 - ![lhz](./docs/lhz.jpg) [骆荟州](https://github.com/LUO12826)
-- ![pcr](./docs/pcr.jpg) 彭丛蓉
+- ![pcr](./docs/pcr.jpg) [彭丛蓉](https://github.com/pecoro-pcr)
 
 ## 网站介绍
 网站名称：**M++（漫家家）**
